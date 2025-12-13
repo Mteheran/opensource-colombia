@@ -66,4 +66,43 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 
 ---
 
+## 🧩 Extensiones y Utilidades
+
+### 🔹 [Angular File Generator](https://github.com/ManuelGil/vscode-angular-generator)
+- **Descripción:** Extensión de VS Code para generar archivos Angular con pocos clics, basada en Angular CLI y sus schematics.
+- **Categoría:** Extensiones VS Code / Angular
+- **Creador:** Manuel Gil
+
+### 🔹 [JSON Flow](https://github.com/ManuelGil/vscode-json-flow)
+- **Descripción:** Transforma archivos JSON en gráficos interactivos basados en nodos directamente en VS Code.
+- **Categoría:** Extensiones VS Code / Visualización de datos
+- **Creador:** Manuel Gil
+
+### 🔹 [Astro File Generator](https://github.com/ManuelGil/vscode-astro-generator)
+- **Descripción:** Extensión de VS Code para generar archivos Astro automáticamente basados en plantillas.
+- **Categoría:** Extensiones VS Code / Astro
+- **Creador:** Manuel Gil
+
+### 🔹 [Mustache Snippets](https://github.com/ManuelGil/vscode-mustache-snippets)
+- **Descripción:** Soporte para el motor de plantillas Mustache en VS Code con resaltado de sintaxis y autocompletado.
+- **Categoría:** Extensiones VS Code / Plantillas
+- **Creador:** Manuel Gil
+
+### 🔹 [Moodle Snippets](https://github.com/ManuelGil/vscode-moodle-snippets)
+- **Descripción:** Snippets de Moodle para archivos PHP, XML y Mustache, con comandos para crear nuevos archivos.
+- **Categoría:** Extensiones VS Code / Educación / Moodle
+- **Creador:** Manuel Gil
+
+### 🔹 [Next.js File Generator](https://github.com/ManuelGil/vscode-nextjs-generator)
+- **Descripción:** Extensión de VS Code para generar archivos de proyectos T3 Stack: Next.js, NextAuth, Prisma, tRPC y más.
+- **Categoría:** Extensiones VS Code / Next.js / React
+- **Creador:** Manuel Gil
+
+### 🔹 [Auto Barrel](https://github.com/ManuelGil/vscode-auto-barrel)
+- **Descripción:** Extensión de VS Code para crear y mantener archivos barrel (index.ts) en proyectos TypeScript/JavaScript.
+- **Categoría:** Extensiones VS Code / Productividad
+- **Creador:** Manuel Gil
+
+---
+
 Estos proyectos demuestran que en Colombia se están construyendo herramientas utilizadas globalmente por desarrolladores, empresas y comunidades. ¡Sigue el trabajo de estos líderes y contribuye al ecosistema open source colombiano! 🇨🇴💻
