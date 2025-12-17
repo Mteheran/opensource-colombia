@@ -64,6 +64,11 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 - **Categoría:** Desarrollo de videojuegos / Unity
 - **Creador:** J.D. Nicholls (Proyecto26)
 
+### 🔹 [ADVAD](https://github.com/ADVAD1D/ADVAD1D)
+- **Descripción:** Videojuego de naves tipo roguelike estilo retro desarrollado en Godot Engine 4.5
+- **Categoría:** Desarrollo de videojuegos / Godot
+- **Creador:** Angel Leonardo (ANGELUS11)
+
 ---
 
 ## 🧩 Extensiones y Utilidades
