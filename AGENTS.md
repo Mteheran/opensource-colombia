@@ -202,8 +202,11 @@ Cualquier servidor estático equivalente funciona (por ejemplo `npx serve`).
 - **Qué hace:** publica la carpeta `site/` en **GitHub Pages**.
 - **Cuándo se ejecuta:** en cada `push` a `main` que toque `site/**` o el propio
   workflow, y también de forma manual (`workflow_dispatch`).
-- **Requisito de configuración:** en GitHub → **Settings → Pages → Source:
-  GitHub Actions** debe estar habilitado para que el despliegue funcione.
+- **Habilitación de Pages:** el paso `configure-pages` usa `enablement: true`,
+  así que **habilita GitHub Pages automáticamente** en la primera ejecución; no
+  hace falta configurarlo a mano. Si por permisos de la organización/cuenta ese
+  auto-habilitado fallara, actívalo manualmente en GitHub → **Settings → Pages →
+  Source: GitHub Actions**.
 - Usa permisos mínimos (`pages: write`, `id-token: write`) y `concurrency` para
   evitar despliegues simultáneos.
 
