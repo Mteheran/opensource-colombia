@@ -155,9 +155,8 @@ IIFE en modo estricto, sin dependencias. Responsabilidades:
 - **Totales:** `renderStats()` calcula el total de proyectos y de categorías
   **directamente desde `window.PROJECTS`** y los pinta en la barra de totales
   (`#stat-projects` / `#stat-categories`). Al ser derivados de los datos, **no
-  hay que actualizarlos a mano** cuando se agrega un proyecto. Junto a ellos, el
-  `index.html` incluye un **indicador de estado del despliegue** (el badge de
-  GitHub Actions, `.site-status`) que enlaza al workflow.
+  hay que actualizarlos a mano** cuando se agrega un proyecto. (El badge de
+  estado del despliegue vive solo en los READMEs, no en el sitio.)
 
 ### 4.4 Estilos — `site/css/styles.css`
 
