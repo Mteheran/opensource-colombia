@@ -6,7 +6,7 @@
 
 [![Deployment status](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg)](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml)
 
-> 📊 **Totals:** 18 projects · 5 categories
+> 📊 **Totals:** 19 projects · 6 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -76,6 +76,15 @@ A showcase of Colombian talent in technology, programming and open data. All pro
 - **Description:** HTTP client with promise support, designed to make consuming APIs from Unity easier.
 - **Category:** Game development / Unity
 - **Creator:** J.D. Nicholls (Proyecto26)
+
+---
+
+## 🎮 Video Games
+
+### 🔹 [ADVAD](https://github.com/ADVAD1D/ADVAD1D)
+- **Description:** Retro arcade-style 2D spaceship shooter (CRT shader) built with the Godot Engine, featuring phase-based progression and 20 selectable ships.
+- **Category:** Game development / Godot
+- **Creator:** Angel Leonardo (ANGELUS11) and Cro128
 
 ---
 

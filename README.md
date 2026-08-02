@@ -6,7 +6,7 @@
 
 [![Estado del despliegue](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg)](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml)
 
-> 📊 **Totales:** 18 proyectos · 5 categorías
+> 📊 **Totales:** 19 proyectos · 6 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -76,6 +76,15 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 - **Descripción:** Cliente HTTP con soporte para promesas, diseñado para facilitar el consumo de APIs desde Unity.
 - **Categoría:** Desarrollo de videojuegos / Unity
 - **Creador:** J.D. Nicholls (Proyecto26)
+
+---
+
+## 🎮 Videojuegos
+
+### 🔹 [ADVAD](https://github.com/ADVAD1D/ADVAD1D)
+- **Descripción:** Videojuego de naves 2D estilo arcade retro (shader CRT) desarrollado en Godot Engine, con progresión por fases y 20 naves seleccionables.
+- **Categoría:** Desarrollo de videojuegos / Godot
+- **Creador:** Angel Leonardo (ANGELUS11) y Cro128
 
 ---
 
