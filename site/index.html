@@ -57,6 +57,30 @@
     </header>
 
     <main id="main" class="container" tabindex="-1">
+      <section class="site-stats" aria-label="Totales del directorio">
+        <span class="stat">
+          <strong id="stat-projects" class="stat-num">0</strong>
+          <span class="stat-label" data-i18n="statProjects">proyectos</span>
+        </span>
+        <span class="stat">
+          <strong id="stat-categories" class="stat-num">0</strong>
+          <span class="stat-label" data-i18n="statCategories">categorías</span>
+        </span>
+        <a
+          class="stat site-status"
+          href="https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-i18n-attr="aria-label:siteStatus,title:siteStatus"
+        >
+          <img
+            src="https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg"
+            alt="Deploy site to GitHub Pages status"
+            height="20"
+          />
+        </a>
+      </section>
+
       <section class="controls" aria-label="Búsqueda y filtros">
         <div class="control-field search-field">
           <label for="search" class="control-label" data-i18n="searchLabel"

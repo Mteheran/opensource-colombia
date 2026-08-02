@@ -121,7 +121,27 @@ demás de su categoría):
 > **explícito en la descripción que no es open source** (por ejemplo, como
 > FastAPI Cloud, que es el patrocinador de FastAPI).
 
-### 5. Verifica la sincronía
+### 5. Actualiza los totales del README
+
+Ambos READMEs muestran en la cabecera una línea de totales escrita a mano:
+
+```markdown
+> 📊 **Totales:** N proyectos · M categorías
+```
+
+Al agregar (o quitar) un proyecto **debes actualizar estos números** en
+`README.md` y `README.en.md`:
+
+- **N** = número total de proyectos. Súmale 1 al agregar uno nuevo.
+- **M** = número de categorías **con al menos un proyecto**. Solo cambia si el
+  proyecto estrena una categoría que antes estaba vacía (hay 5 categorías
+  posibles; ver la tabla de arriba).
+
+> El sitio web **no** necesita esto: sus totales se calculan solos desde
+> `data.js` (`renderStats()` en `app.js`). Los totales manuales son únicamente
+> los de los dos READMEs.
+
+### 6. Verifica la sincronía
 
 Antes de terminar, confirma:
 
@@ -129,6 +149,7 @@ Antes de terminar, confirma:
 - [ ] La `category` de `data.js` coincide con la sección usada en ambos READMEs.
 - [ ] `data.js` tiene las tres descripciones (`es`, `en`, `pt`).
 - [ ] La sintaxis de `data.js` es válida (comas, llaves, comillas correctas).
+- [ ] Actualizaste los **totales** (`📊 Totales`) en `README.md` y `README.en.md`.
 
 Opcionalmente, para comprobar el sitio en vivo:
 

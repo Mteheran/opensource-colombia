@@ -14,6 +14,9 @@ window.I18N = {
     themeToLight: "Activar modo claro",
     languageLabel: "Idioma",
     creatorLabel: "Creador",
+    statProjects: "proyectos",
+    statCategories: "categorías",
+    siteStatus: "Estado del despliegue del sitio (se abre en una nueva pestaña)",
     resultsCount: (n) =>
       n === 1 ? "1 proyecto encontrado" : `${n} proyectos encontrados`,
     noResults: "No se encontraron proyectos que coincidan con tu búsqueda.",
@@ -44,6 +47,9 @@ window.I18N = {
     themeToLight: "Enable light mode",
     languageLabel: "Language",
     creatorLabel: "Creator",
+    statProjects: "projects",
+    statCategories: "categories",
+    siteStatus: "Site deployment status (opens in a new tab)",
     resultsCount: (n) =>
       n === 1 ? "1 project found" : `${n} projects found`,
     noResults: "No projects matched your search.",
@@ -74,6 +80,9 @@ window.I18N = {
     themeToLight: "Ativar modo claro",
     languageLabel: "Idioma",
     creatorLabel: "Criador",
+    statProjects: "projetos",
+    statCategories: "categorias",
+    siteStatus: "Status de implantação do site (abre em uma nova aba)",
     resultsCount: (n) =>
       n === 1 ? "1 projeto encontrado" : `${n} projetos encontrados`,
     noResults: "Nenhum projeto corresponde à sua busca.",
