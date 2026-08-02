@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Directorio de proyectos open source colombianos: bibliotecas, APIs, herramientas y servicios creados por la comunidad de Colombia."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Proyectos Open Source Colombianos 🇨🇴</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skipToContent"
+      >Saltar al contenido principal</a
+    >
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-flag" aria-hidden="true">🇨🇴</span>
+          <div class="brand-text">
+            <h1 id="site-title" data-i18n="title">
+              Proyectos Open Source Colombianos
+            </h1>
+            <p id="site-subtitle" class="subtitle" data-i18n="subtitle">
+              Una muestra del talento colombiano en tecnología, programación y
+              datos abiertos.
+            </p>
+          </div>
+        </div>
+
+        <div class="header-controls">
+          <div class="lang-switch" role="group" aria-label="Idioma" id="lang-group">
+            <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">
+              ES
+            </button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">
+              EN
+            </button>
+            <button type="button" class="lang-btn" data-lang="pt" aria-pressed="false">
+              PT
+            </button>
+          </div>
+
+          <button
+            type="button"
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-pressed="false"
+          >
+            <span class="theme-icon" aria-hidden="true">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container" tabindex="-1">
+      <section class="controls" aria-label="Búsqueda y filtros">
+        <div class="control-field search-field">
+          <label for="search" class="control-label" data-i18n="searchLabel"
+            >Buscar proyectos</label
+          >
+          <div class="search-wrapper">
+            <span class="search-icon" aria-hidden="true">🔎</span>
+            <input
+              type="search"
+              id="search"
+              class="search-input"
+              autocomplete="off"
+              placeholder="Buscar por nombre, descripción o creador…"
+              data-i18n-attr="placeholder:searchPlaceholder"
+              aria-describedby="results-count"
+            />
+          </div>
+        </div>
+
+        <div class="control-field filter-field">
+          <label for="category" class="control-label" data-i18n="filterLabel"
+            >Filtrar por categoría</label
+          >
+          <select id="category" class="category-select"></select>
+        </div>
+      </section>
+
+      <p
+        id="results-count"
+        class="results-count"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+      <ul id="project-list" class="project-grid" aria-labelledby="site-title"></ul>
+
+      <p id="no-results" class="no-results" hidden>
+        No se encontraron proyectos que coincidan con tu búsqueda.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-i18n="footer">
+          Hecho con 🇨🇴 para la comunidad open source colombiana.
+        </p>
+        <p>
+          <a
+            href="https://github.com/Mteheran/opensource-colombia"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/Mteheran/opensource-colombia</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

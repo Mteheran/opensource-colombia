@@ -1,0 +1,93 @@
+// Traducciones de la interfaz de usuario para los tres idiomas soportados.
+window.I18N = {
+  es: {
+    htmlLang: "es",
+    title: "Proyectos Open Source Colombianos",
+    subtitle:
+      "Una muestra del talento colombiano en tecnología, programación y datos abiertos.",
+    skipToContent: "Saltar al contenido principal",
+    searchLabel: "Buscar proyectos",
+    searchPlaceholder: "Buscar por nombre, descripción o creador…",
+    filterLabel: "Filtrar por categoría",
+    themeToggle: "Cambiar tema",
+    themeToDark: "Activar modo oscuro",
+    themeToLight: "Activar modo claro",
+    languageLabel: "Idioma",
+    creatorLabel: "Creador",
+    resultsCount: (n) =>
+      n === 1 ? "1 proyecto encontrado" : `${n} proyectos encontrados`,
+    noResults: "No se encontraron proyectos que coincidan con tu búsqueda.",
+    clearSearch: "Limpiar búsqueda",
+    visitProject: "Visitar proyecto (se abre en una nueva pestaña)",
+    footer:
+      "Hecho con 🇨🇴 para la comunidad open source colombiana. Contribuye en GitHub.",
+    categories: {
+      all: "Todas las categorías",
+      libraries: "Bibliotecas y Frameworks",
+      apis: "APIs y Datos Abiertos",
+      mobile: "Móvil, Juegos y Herramientas",
+      extensions: "Extensiones y Utilidades",
+      services: "Servicios y Proveedores",
+    },
+  },
+  en: {
+    htmlLang: "en",
+    title: "Colombian Open Source Projects",
+    subtitle:
+      "A showcase of Colombian talent in technology, programming and open data.",
+    skipToContent: "Skip to main content",
+    searchLabel: "Search projects",
+    searchPlaceholder: "Search by name, description or creator…",
+    filterLabel: "Filter by category",
+    themeToggle: "Toggle theme",
+    themeToDark: "Enable dark mode",
+    themeToLight: "Enable light mode",
+    languageLabel: "Language",
+    creatorLabel: "Creator",
+    resultsCount: (n) =>
+      n === 1 ? "1 project found" : `${n} projects found`,
+    noResults: "No projects matched your search.",
+    clearSearch: "Clear search",
+    visitProject: "Visit project (opens in a new tab)",
+    footer:
+      "Made with 🇨🇴 for the Colombian open source community. Contribute on GitHub.",
+    categories: {
+      all: "All categories",
+      libraries: "Libraries & Frameworks",
+      apis: "APIs & Open Data",
+      mobile: "Mobile, Games & Tools",
+      extensions: "Extensions & Utilities",
+      services: "Services & Providers",
+    },
+  },
+  pt: {
+    htmlLang: "pt",
+    title: "Projetos Open Source Colombianos",
+    subtitle:
+      "Uma amostra do talento colombiano em tecnologia, programação e dados abertos.",
+    skipToContent: "Pular para o conteúdo principal",
+    searchLabel: "Buscar projetos",
+    searchPlaceholder: "Buscar por nome, descrição ou criador…",
+    filterLabel: "Filtrar por categoria",
+    themeToggle: "Alternar tema",
+    themeToDark: "Ativar modo escuro",
+    themeToLight: "Ativar modo claro",
+    languageLabel: "Idioma",
+    creatorLabel: "Criador",
+    resultsCount: (n) =>
+      n === 1 ? "1 projeto encontrado" : `${n} projetos encontrados`,
+    noResults: "Nenhum projeto corresponde à sua busca.",
+    clearSearch: "Limpar busca",
+    visitProject: "Visitar projeto (abre em uma nova aba)",
+    footer:
+      "Feito com 🇨🇴 para a comunidade open source colombiana. Contribua no GitHub.",
+    categories: {
+      all: "Todas as categorias",
+      libraries: "Bibliotecas e Frameworks",
+      apis: "APIs e Dados Abertos",
+      mobile: "Móvel, Jogos e Ferramentas",
+      extensions: "Extensões e Utilitários",
+      services: "Serviços e Provedores",
+    },
+  },
+};

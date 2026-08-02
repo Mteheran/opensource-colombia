@@ -1,5 +1,7 @@
 # 🇨🇴 Proyectos Open Source Colombianos
 
+**🌐 Léelo en otros idiomas:** **Español** · [English](README.en.md)
+
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
 ✅ De código abierto  
@@ -35,6 +37,11 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 - **Descripción:** Gestión de roles y permisos para Laravel.
 - **Categoría:** Gestión de roles y permisos
 - **Creador:** Santiago García
+
+### 🔹 [Colombia Icons](https://github.com/Mteheran/colombia-icons)
+- **Descripción:** Librería de íconos SVG de estilo lineal (outline) inspirados en la cultura, naturaleza y tradiciones de Colombia, disponible para React, Angular y Blazor.
+- **Categoría:** Librería de íconos / UI
+- **Creador:** Miguel Teheran
 
 ---
 
@@ -102,6 +109,15 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 - **Descripción:** Extensión de VS Code para crear y mantener archivos barrel (index.ts) en proyectos TypeScript/JavaScript.
 - **Categoría:** Extensiones VS Code / Productividad
 - **Creador:** Manuel Gil
+
+---
+
+## ☁️ Servicios y Proveedores
+
+### 🔹 [FastAPI Cloud](https://fastapicloud.com)
+- **Descripción:** Plataforma comercial de despliegue en la nube creada por el equipo de FastAPI para llevar aplicaciones Python a producción con un solo comando. **No es un proyecto de código abierto**, pero es el principal patrocinador de FastAPI y de los demás proyectos open source del equipo, financiando su desarrollo y mantenimiento.
+- **Categoría:** Cloud / Plataforma de despliegue (PaaS) — Comercial
+- **Creador:** Sebastián Ramírez y el equipo de FastAPI
 
 ---
 
