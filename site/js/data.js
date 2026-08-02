@@ -112,6 +112,17 @@ window.PROJECTS = [
     },
   },
   {
+    name: "ADVAD",
+    url: "https://github.com/ADVAD1D/ADVAD1D",
+    category: "games",
+    creator: "Angel Leonardo (ANGELUS11) y Cro128",
+    description: {
+      es: "Videojuego de naves 2D estilo arcade retro (shader CRT) desarrollado en Godot Engine, con progresión por fases y 20 naves seleccionables.",
+      en: "Retro arcade-style 2D spaceship shooter (CRT shader) built with the Godot Engine, featuring phase-based progression and 20 selectable ships.",
+      pt: "Jogo de naves 2D estilo arcade retrô (shader CRT) desenvolvido na Godot Engine, com progressão por fases e 20 naves selecionáveis.",
+    },
+  },
+  {
     name: "Angular File Generator",
     url: "https://github.com/ManuelGil/vscode-angular-generator",
     category: "extensions",

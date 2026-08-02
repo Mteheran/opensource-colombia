@@ -9,6 +9,7 @@
     "libraries",
     "apis",
     "mobile",
+    "games",
     "extensions",
     "services",
   ];
