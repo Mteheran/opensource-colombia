@@ -33,13 +33,26 @@
     list: document.getElementById("project-list"),
     resultsCount: document.getElementById("results-count"),
     noResults: document.getElementById("no-results"),
+    statProjects: document.getElementById("stat-projects"),
+    statCategories: document.getElementById("stat-categories"),
   };
 
   // --- Inicialización ----------------------------------------------------
   function init() {
     applyTheme(state.theme);
+    renderStats(); // totales; se calculan una sola vez desde los datos
     bindEvents();
     applyLanguage(state.lang); // también hace el render inicial
+  }
+
+  // Totales del directorio, derivados de los datos para no desactualizarse.
+  function renderStats() {
+    const total = window.PROJECTS.length;
+    const categories = new Set(
+      window.PROJECTS.map((p) => p.category)
+    ).size;
+    if (els.statProjects) els.statProjects.textContent = String(total);
+    if (els.statCategories) els.statCategories.textContent = String(categories);
   }
 
   function bindEvents() {

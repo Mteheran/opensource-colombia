@@ -2,6 +2,12 @@
 
 **🌐 Léelo en otros idiomas:** **Español** · [English](README.en.md)
 
+**🔗 Sitio web:** <https://mteheran.github.io/opensource-colombia/>
+
+[![Estado del despliegue](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg)](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml)
+
+> 📊 **Totales:** 18 proyectos · 5 categorías
+
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
 ✅ De código abierto  

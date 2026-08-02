@@ -3,6 +3,8 @@
 Guía para agentes de IA y personas colaboradoras sobre cómo está construido y
 cómo se mantiene el proyecto **Proyectos Open Source Colombianos**.
 
+> 🌐 **Sitio publicado:** <https://mteheran.github.io/opensource-colombia/>
+
 ---
 
 ## 1. Propósito del proyecto
@@ -76,6 +78,15 @@ other languages`). Cada proyecto sigue **exactamente** este formato:
 En `README.en.md` las etiquetas van en inglés (`Description`, `Category`,
 `Creator`) y el contenido traducido.
 
+Ambos READMEs muestran en la cabecera, además del selector de idioma:
+
+- El **enlace al sitio publicado** (`🔗 Sitio web` / `🔗 Website`).
+- Un **badge de estado del despliegue** (GitHub Actions) que enlaza al workflow.
+- Una línea de **totales** (`📊 Totales: N proyectos · M categorías`). Estos
+  números están **escritos a mano**, así que hay que actualizarlos al agregar o
+  quitar proyectos (ver secciones 5 y 9). En el sitio, en cambio, los totales se
+  calculan solos (sección 4.3).
+
 ### Secciones actuales
 
 | Emoji | Sección                              | `category` en `data.js` |
@@ -141,6 +152,11 @@ IIFE en modo estricto, sin dependencias. Responsabilidades:
 - **Filtro por categoría:** `<select>` alimentado desde `CATEGORY_ORDER`.
 - **Render:** construye las tarjetas con la API del DOM (no `innerHTML` con datos)
   y actualiza el contador de resultados y el estado vacío.
+- **Totales:** `renderStats()` calcula el total de proyectos y de categorías
+  **directamente desde `window.PROJECTS`** y los pinta en la barra de totales
+  (`#stat-projects` / `#stat-categories`). Al ser derivados de los datos, **no
+  hay que actualizarlos a mano** cuando se agrega un proyecto. (El badge de
+  estado del despliegue vive solo en los READMEs, no en el sitio.)
 
 ### 4.4 Estilos — `site/css/styles.css`
 
@@ -199,6 +215,7 @@ Cualquier servidor estático equivalente funciona (por ejemplo `npx serve`).
 
 ## 7. Despliegue — `.github/workflows/deploy.yml`
 
+- **URL publicada:** <https://mteheran.github.io/opensource-colombia/>
 - **Qué hace:** publica la carpeta `site/` en **GitHub Pages**.
 - **Cuándo se ejecuta:** en cada `push` a `main` que toque `site/**` o el propio
   workflow, y también de forma manual (`workflow_dispatch`).
@@ -236,5 +253,7 @@ Antes de dar por terminada una tarea que toque el catálogo o el sitio:
 - [ ] ¿`README.md`, `README.en.md` y `site/js/data.js` quedaron sincronizados?
 - [ ] ¿La `category` usada es válida y existe en `i18n.js` (los 3 idiomas)?
 - [ ] ¿Las descripciones están en `es`, `en` y `pt`?
+- [ ] ¿Actualizaste los **totales** (`📊 Totales: N proyectos · M categorías`) en
+      `README.md` y `README.en.md`? (Los del sitio se calculan solos.)
 - [ ] ¿Probaste el sitio localmente (render, búsqueda, filtro, idioma, tema)?
 - [ ] Si tocaste el flujo de despliegue, ¿sigue apuntando a `./site`?

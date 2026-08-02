@@ -2,6 +2,12 @@
 
 **🌐 Read this in other languages:** [Español](README.md) · **English**
 
+**🔗 Website:** <https://mteheran.github.io/opensource-colombia/>
+
+[![Deployment status](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg)](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml)
+
+> 📊 **Totals:** 18 projects · 5 categories
+
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
 ✅ Open source  
