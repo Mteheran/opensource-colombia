@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 19 proyectos · 6 categorías
+> 📊 **Totales:** 20 proyectos · 7 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -146,6 +146,15 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Plataforma comercial de despliegue en la nube creada por el equipo de FastAPI para llevar aplicaciones Python a producción con un solo comando. **No es un proyecto de código abierto**, pero es el principal patrocinador de FastAPI y de los demás proyectos open source del equipo, financiando su desarrollo y mantenimiento.
 - **Categoría:** Cloud / Plataforma de despliegue (PaaS) — Comercial
 - **Creador:** Sebastián Ramírez y el equipo de FastAPI
+
+---
+
+## 📦 Recursos
+
+### 🔹 [GeoJson de Colombia](https://gist.github.com/john-guerra/43c7656821069d00dcbc)
+- **Descripción:** Archivo GeoJSON con los límites geográficos de los departamentos de Colombia, listo para usar en mapas y visualizaciones con D3.js, Power BI, Metabase y otras herramientas.
+- **Categoría:** Datos geográficos / GeoJSON
+- **Creador:** John Guerra
 
 ---
 

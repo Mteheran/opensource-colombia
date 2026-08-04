@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 19 projects · 6 categories
+> 📊 **Totals:** 20 projects · 7 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -146,6 +146,15 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Commercial cloud deployment platform created by the FastAPI team to take Python applications to production with a single command. **It is not an open source project**, but it is the main sponsor of FastAPI and the team's other open source projects, funding their development and maintenance.
 - **Category:** Cloud / Deployment platform (PaaS) — Commercial
 - **Creator:** Sebastián Ramírez and the FastAPI team
+
+---
+
+## 📦 Resources
+
+### 🔹 [GeoJson de Colombia](https://gist.github.com/john-guerra/43c7656821069d00dcbc)
+- **Description:** GeoJSON file with the geographic boundaries of Colombia's departments, ready to use in maps and visualizations with D3.js, Power BI, Metabase and other tools.
+- **Category:** Geographic data / GeoJSON
+- **Creator:** John Guerra
 
 ---
 

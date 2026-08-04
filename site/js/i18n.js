@@ -35,6 +35,7 @@ window.I18N = {
       games: "Videojuegos",
       extensions: "Extensiones y Utilidades",
       services: "Servicios y Proveedores",
+      recursos: "Recursos",
     },
   },
   en: {
@@ -72,6 +73,7 @@ window.I18N = {
       games: "Video Games",
       extensions: "Extensions & Utilities",
       services: "Services & Providers",
+      recursos: "Resources",
     },
   },
   pt: {
@@ -109,6 +111,7 @@ window.I18N = {
       games: "Videojogos",
       extensions: "Extensões e Utilitários",
       services: "Serviços e Provedores",
+      recursos: "Recursos",
     },
   },
 };
