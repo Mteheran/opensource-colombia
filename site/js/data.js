@@ -210,4 +210,15 @@ window.PROJECTS = [
       pt: "Plataforma comercial de deploy na nuvem da equipe do FastAPI. Não é open source, mas é o principal patrocinador do FastAPI e dos demais projetos open source da equipe.",
     },
   },
+  {
+    name: "GeoJson de Colombia",
+    url: "https://gist.github.com/john-guerra/43c7656821069d00dcbc",
+    category: "recursos",
+    creator: "John Guerra",
+    description: {
+      es: "Archivo GeoJSON con los límites geográficos de los departamentos de Colombia, listo para usar en mapas y visualizaciones con D3.js, Power BI, Metabase y otras herramientas.",
+      en: "GeoJSON file with the geographic boundaries of Colombia's departments, ready to use in maps and visualizations with D3.js, Power BI, Metabase and other tools.",
+      pt: "Arquivo GeoJSON com os limites geográficos dos departamentos da Colômbia, pronto para usar em mapas e visualizações com D3.js, Power BI, Metabase e outras ferramentas.",
+    },
+  },
 ];
