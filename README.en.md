@@ -2,9 +2,12 @@
 
 **🌐 Read this in other languages:** [Español](README.md) · **English**
 
-**🔗 Website:** <https://mteheran.github.io/opensource-colombia/>
+**🔗 Website:** <https://opensource-colombia.com/>
 
 [![Deployment status](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg)](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > 📊 **Totals:** 19 projects · 6 categories
 
@@ -14,6 +17,16 @@ A showcase of Colombian talent in technology, programming and open data. All pro
 ✅ Free  
 ✅ With recent activity  
 ✅ Relevant for developers or communities
+
+---
+
+## 🌐 Official website
+
+Explore the whole directory interactively on the official website:
+
+**👉 <https://opensource-colombia.com/>**
+
+There you can search projects, filter by category and discover Colombian open source talent.
 
 ---
 
@@ -137,3 +150,28 @@ A showcase of Colombian talent in technology, programming and open data. All pro
 ---
 
 These projects show that Colombia is building tools used globally by developers, companies and communities. Follow the work of these leaders and contribute to the Colombian open source ecosystem! 🇨🇴💻
+
+---
+
+## 🤝 Contributors
+
+Thanks goes to these wonderful people 💙
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mteheran"><img src="https://avatars.githubusercontent.com/u/3578356?v=4?s=100" width="100px;" alt="Miguel Teheran"/><br /><sub><b>Miguel Teheran</b></sub></a><br /><a href="https://github.com/Mteheran/opensource-colombia/commits?author=Mteheran" title="Code">💻</a> <a href="#maintenance-Mteheran" title="Maintenance">🚧</a> <a href="#content-Mteheran" title="Content">🖋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome! See the [contributing guide](CONTRIBUTING.md) to get started.

@@ -2,9 +2,12 @@
 
 **🌐 Léelo en otros idiomas:** **Español** · [English](README.en.md)
 
-**🔗 Sitio web:** <https://mteheran.github.io/opensource-colombia/>
+**🔗 Sitio web:** <https://opensource-colombia.com/>
 
 [![Estado del despliegue](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml/badge.svg)](https://github.com/Mteheran/opensource-colombia/actions/workflows/deploy.yml)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > 📊 **Totales:** 19 proyectos · 6 categorías
 
@@ -14,6 +17,16 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 ✅ Gratuitos  
 ✅ Con actividad reciente  
 ✅ Relevantes para desarrolladores o comunidades
+
+---
+
+## 🌐 Sitio web oficial
+
+Explora todo el directorio de forma interactiva en el sitio web oficial:
+
+**👉 <https://opensource-colombia.com/>**
+
+Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento colombiano en código abierto.
 
 ---
 
@@ -137,3 +150,28 @@ Una muestra del talento colombiano en tecnología, programación y datos abierto
 ---
 
 Estos proyectos demuestran que en Colombia se están construyendo herramientas utilizadas globalmente por desarrolladores, empresas y comunidades. ¡Sigue el trabajo de estos líderes y contribuye al ecosistema open source colombiano! 🇨🇴💻
+
+---
+
+## 🤝 Contribuidores
+
+Gracias a todas las personas que han contribuido a este proyecto 💙
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mteheran"><img src="https://avatars.githubusercontent.com/u/3578356?v=4?s=100" width="100px;" alt="Miguel Teheran"/><br /><sub><b>Miguel Teheran</b></sub></a><br /><a href="https://github.com/Mteheran/opensource-colombia/commits?author=Mteheran" title="Code">💻</a> <a href="#maintenance-Mteheran" title="Maintenance">🚧</a> <a href="#content-Mteheran" title="Content">🖋</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+Este proyecto sigue la especificación [all-contributors](https://github.com/all-contributors/all-contributors). ¡Contribuciones de cualquier tipo son bienvenidas! Consulta la [guía de contribución](CONTRIBUTING.md) para empezar.
