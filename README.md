@@ -165,6 +165,7 @@ Gracias a todas las personas que han contribuido a este proyecto 💙
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Mteheran"><img src="https://avatars.githubusercontent.com/u/3578356?v=4?s=100" width="100px;" alt="Miguel Teheran"/><br /><sub><b>Miguel Teheran</b></sub></a><br /><a href="https://github.com/Mteheran/opensource-colombia/commits?author=Mteheran" title="Code">💻</a> <a href="#maintenance-Mteheran" title="Maintenance">🚧</a> <a href="#content-Mteheran" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Rinaplata"><img src="https://avatars.githubusercontent.com/u/55161289?v=4?s=100" width="100px;" alt="Rina Plata"/><br /><sub><b>Rina Plata</b></sub></a><br /><a href="#content-Rinaplata" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
