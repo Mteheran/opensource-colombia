@@ -1,0 +1,30 @@
+{
+  "projectName": "opensource-colombia",
+  "projectOwner": "Mteheran",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md",
+    "README.en.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "commitType": "docs",
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": false,
+  "badgeTemplate": "[![All Contributors](https://img.shields.io/github/all-contributors/<%= projectOwner %>/<%= projectName %>?color=ee8449&style=flat-square)](#-contribuidores)",
+  "contributors": [
+    {
+      "login": "Mteheran",
+      "name": "Miguel Teheran",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3578356?v=4",
+      "profile": "https://github.com/Mteheran",
+      "contributions": [
+        "code",
+        "maintenance",
+        "content"
+      ]
+    }
+  ]
+}

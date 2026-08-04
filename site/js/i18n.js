@@ -16,13 +16,17 @@ window.I18N = {
     creatorLabel: "Creador",
     statProjects: "proyectos",
     statCategories: "categorías",
+    aboutTitle: "¿Qué es Open Source Colombia?",
+    aboutText:
+      "Open Source Colombia es un directorio abierto que reúne proyectos de código abierto creados por la comunidad colombiana: bibliotecas, APIs, herramientas y servicios. Nuestro objetivo es dar visibilidad al talento del país y facilitar que más personas descubran, usen y contribuyan a estos proyectos.",
+    aboutVideoTitle: "Video: ¿Qué es Open Source Colombia?",
     resultsCount: (n) =>
       n === 1 ? "1 proyecto encontrado" : `${n} proyectos encontrados`,
     noResults: "No se encontraron proyectos que coincidan con tu búsqueda.",
     clearSearch: "Limpiar búsqueda",
     visitProject: "Visitar proyecto (se abre en una nueva pestaña)",
     footer:
-      "Hecho con 🇨🇴 para la comunidad open source colombiana. Contribuye en GitHub.",
+      "Hecho con ❤️ para la comunidad open source colombiana. Contribuye en GitHub.",
     categories: {
       all: "Todas las categorías",
       libraries: "Bibliotecas y Frameworks",
@@ -49,13 +53,17 @@ window.I18N = {
     creatorLabel: "Creator",
     statProjects: "projects",
     statCategories: "categories",
+    aboutTitle: "What is Open Source Colombia?",
+    aboutText:
+      "Open Source Colombia is an open directory that gathers open source projects built by the Colombian community: libraries, APIs, tools and services. Our goal is to give visibility to the country's talent and make it easier for more people to discover, use and contribute to these projects.",
+    aboutVideoTitle: "Video: What is Open Source Colombia?",
     resultsCount: (n) =>
       n === 1 ? "1 project found" : `${n} projects found`,
     noResults: "No projects matched your search.",
     clearSearch: "Clear search",
     visitProject: "Visit project (opens in a new tab)",
     footer:
-      "Made with 🇨🇴 for the Colombian open source community. Contribute on GitHub.",
+      "Made with ❤️ for the Colombian open source community. Contribute on GitHub.",
     categories: {
       all: "All categories",
       libraries: "Libraries & Frameworks",
@@ -82,13 +90,17 @@ window.I18N = {
     creatorLabel: "Criador",
     statProjects: "projetos",
     statCategories: "categorias",
+    aboutTitle: "O que é Open Source Colombia?",
+    aboutText:
+      "Open Source Colombia é um diretório aberto que reúne projetos de código aberto criados pela comunidade colombiana: bibliotecas, APIs, ferramentas e serviços. Nosso objetivo é dar visibilidade ao talento do país e facilitar que mais pessoas descubram, usem e contribuam para esses projetos.",
+    aboutVideoTitle: "Vídeo: O que é Open Source Colombia?",
     resultsCount: (n) =>
       n === 1 ? "1 projeto encontrado" : `${n} projetos encontrados`,
     noResults: "Nenhum projeto corresponde à sua busca.",
     clearSearch: "Limpar busca",
     visitProject: "Visitar projeto (abre em uma nova aba)",
     footer:
-      "Feito com 🇨🇴 para a comunidade open source colombiana. Contribua no GitHub.",
+      "Feito com ❤️ para a comunidade open source colombiana. Contribua no GitHub.",
     categories: {
       all: "Todas as categorias",
       libraries: "Bibliotecas e Frameworks",

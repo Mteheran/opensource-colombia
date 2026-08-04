@@ -3,12 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO primario -->
+    <title>Proyectos Open Source Colombianos 🇨🇴 | Open Source Colombia</title>
     <meta
       name="description"
-      content="Directorio de proyectos open source colombianos: bibliotecas, APIs, herramientas y servicios creados por la comunidad de Colombia."
+      content="Directorio de proyectos open source colombianos: bibliotecas, APIs, herramientas y servicios de código abierto creados por la comunidad de desarrolladores de Colombia."
     />
+    <meta
+      name="keywords"
+      content="open source Colombia, código abierto Colombia, proyectos open source, desarrolladores Colombia, bibliotecas, APIs, software libre, comunidad tech Colombia"
+    />
+    <meta name="author" content="Miguel Teheran" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="googlebot" content="index, follow" />
     <meta name="color-scheme" content="light dark" />
-    <title>Proyectos Open Source Colombianos 🇨🇴</title>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1420" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="https://opensource-colombia.com/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Open Source Colombia" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:url" content="https://opensource-colombia.com/" />
+    <meta
+      property="og:title"
+      content="Proyectos Open Source Colombianos 🇨🇴"
+    />
+    <meta
+      property="og:description"
+      content="Directorio de proyectos open source colombianos: bibliotecas, APIs, herramientas y servicios de código abierto creados por la comunidad de Colombia."
+    />
+    <meta property="og:image" content="https://opensource-colombia.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Open Source Colombia — directorio de proyectos de código abierto" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Proyectos Open Source Colombianos 🇨🇴" />
+    <meta
+      name="twitter:description"
+      content="Directorio de proyectos open source colombianos: bibliotecas, APIs, herramientas y servicios de código abierto creados por la comunidad de Colombia."
+    />
+    <meta name="twitter:image" content="https://opensource-colombia.com/og-image.png" />
+    <meta name="twitter:image:alt" content="Open Source Colombia — directorio de proyectos de código abierto" />
+
+    <!-- Datos estructurados (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Open Source Colombia",
+        "alternateName": "Proyectos Open Source Colombianos",
+        "url": "https://opensource-colombia.com/",
+        "inLanguage": "es",
+        "description": "Directorio de proyectos open source colombianos: bibliotecas, APIs, herramientas y servicios de código abierto creados por la comunidad de Colombia.",
+        "author": {
+          "@type": "Person",
+          "name": "Miguel Teheran"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -57,6 +117,31 @@
     </header>
 
     <main id="main" class="container" tabindex="-1">
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title" class="about-title" data-i18n="aboutTitle">
+          ¿Qué es Open Source Colombia?
+        </h2>
+        <p class="about-text" data-i18n="aboutText">
+          Open Source Colombia es un directorio abierto que reúne proyectos de
+          código abierto creados por la comunidad colombiana: bibliotecas, APIs,
+          herramientas y servicios. Nuestro objetivo es dar visibilidad al
+          talento del país y facilitar que más personas descubran, usen y
+          contribuyan a estos proyectos.
+        </p>
+        <div class="about-video">
+          <iframe
+            src="https://www.youtube.com/embed/3p7nFKiAyyM"
+            title="Video: ¿Qué es Open Source Colombia?"
+            data-i18n-attr="title:aboutVideoTitle"
+            loading="lazy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
       <section class="site-stats" aria-label="Totales del directorio">
         <span class="stat">
           <strong id="stat-projects" class="stat-num">0</strong>
@@ -112,7 +197,7 @@
     <footer class="site-footer">
       <div class="container">
         <p data-i18n="footer">
-          Hecho con 🇨🇴 para la comunidad open source colombiana.
+          Hecho con ❤️ para la comunidad open source colombiana.
         </p>
         <p>
           <a
