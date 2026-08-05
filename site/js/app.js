@@ -47,15 +47,20 @@
     featuredDots: document.getElementById("featured-dots"),
     featuredPrev: document.getElementById("featured-prev"),
     featuredNext: document.getElementById("featured-next"),
+    creatorsList: document.getElementById("creators-list"),
+    categoriesGrid: document.getElementById("categories-grid"),
+    navLinks: Array.from(document.querySelectorAll(".nav-link")),
   };
 
   // --- Inicialización ----------------------------------------------------
   function init() {
     readUrlState(); // ?cat= y ?view= antes del primer render
     updateViewButtons();
+    renderCreators(); // independiente del idioma
     applyTheme(state.theme);
     bindEvents();
     applyLanguage(state.lang); // también hace el render inicial y el eyebrow
+    observeSections(); // aria-current de la nav según el scroll
   }
 
   // Lee el estado inicial desde la URL (?cat=, ?view=). La URL gana sobre
@@ -126,6 +131,9 @@
       const btn = e.target.closest(".view-btn");
       if (btn) setView(btn.dataset.view);
     });
+
+    // Tarjetas de la sección Categorías.
+    if (els.categoriesGrid) bindCategoryCards();
 
     // Carrusel de destacados (sin autoplay). Flechas del teclado con foco dentro.
     if (els.featured) {
@@ -234,6 +242,7 @@
     updateChips();
     renderHeroStats(t);
     renderFeatured(t);
+    renderCategories(t);
     updateThemeLabel();
     render();
   }
@@ -536,6 +545,124 @@
       creator
     );
     return li;
+  }
+
+  // --- Creadores ---------------------------------------------------------
+  // Se derivan de los datos agrupando por creador; orden por número de
+  // proyectos (desc), con la primera aparición como desempate. Contenido
+  // independiente del idioma, así que se renderiza una sola vez.
+  function renderCreators() {
+    if (!els.creatorsList) return;
+    const map = new Map();
+    window.PROJECTS.forEach((p, idx) => {
+      const key = p.creator.name;
+      if (!map.has(key))
+        map.set(key, { creator: p.creator, count: 0, order: idx });
+      map.get(key).count += 1;
+    });
+    const creators = Array.from(map.values()).sort((a, b) =>
+      b.count !== a.count ? b.count - a.count : a.order - b.order
+    );
+
+    els.creatorsList.innerHTML = "";
+    creators.forEach((c, i) => {
+      const li = document.createElement("li");
+      li.className = "creator-row";
+
+      const rank = document.createElement("span");
+      rank.className = "creator-rank";
+      rank.setAttribute("aria-hidden", "true");
+      rank.textContent = String(i + 1).padStart(2, "0");
+
+      const info = document.createElement("span");
+      const link = document.createElement("a");
+      link.className = "creator-name";
+      link.href = "https://github.com/" + c.creator.github;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = c.creator.name;
+      const area = document.createElement("span");
+      area.className = "creator-area";
+      area.textContent = c.creator.area;
+      info.append(link, area);
+
+      const count = document.createElement("span");
+      count.className = "creator-count";
+      count.textContent = String(c.count);
+
+      li.append(rank, info, count);
+      els.creatorsList.appendChild(li);
+    });
+  }
+
+  // --- Categorías --------------------------------------------------------
+  function renderCategories(t) {
+    if (!els.categoriesGrid) return;
+    els.categoriesGrid.innerHTML = "";
+    CATEGORY_ORDER.forEach((key) => {
+      const count = window.PROJECTS.filter((p) => p.category === key).length;
+
+      const card = document.createElement("a");
+      card.className = "category-card";
+      card.href = "?cat=" + key;
+
+      const bar = document.createElement("span");
+      bar.className = "category-bar";
+      bar.setAttribute("aria-hidden", "true");
+      bar.style.background = "var(--cat-" + key + ")";
+
+      const info = document.createElement("span");
+      const name = document.createElement("span");
+      name.className = "category-name";
+      name.textContent = t.categories[key];
+      const cnt = document.createElement("span");
+      cnt.className = "category-count";
+      cnt.textContent = t.projectCount(count);
+      info.append(name, cnt);
+
+      card.append(bar, info);
+      els.categoriesGrid.appendChild(card);
+    });
+  }
+
+  // Al hacer clic en una tarjeta de categoría, filtra sin recargar.
+  function bindCategoryCards() {
+    els.categoriesGrid.addEventListener("click", (e) => {
+      const card = e.target.closest(".category-card");
+      if (!card) return;
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)
+        return;
+      const url = new URL(card.href);
+      const cat = new URLSearchParams(url.search).get("cat");
+      e.preventDefault();
+      setCategory(cat);
+      if (els.list) els.list.scrollIntoView({ block: "start" });
+    });
+  }
+
+  // --- Navegación por secciones (aria-current) ---------------------------
+  function observeSections() {
+    if (!("IntersectionObserver" in window)) return;
+    const byHref = {};
+    els.navLinks.forEach((l) => {
+      byHref[l.getAttribute("href")] = l;
+    });
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const link = byHref["#" + entry.target.id];
+          if (!link) return;
+          els.navLinks.forEach((l) => l.removeAttribute("aria-current"));
+          link.setAttribute("aria-current", "page");
+        });
+      },
+      { rootMargin: "0px 0px -70% 0px", threshold: 0 }
+    );
+    ["proyectos", "creadores", "categorias", "contribuir"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
   }
 
   // --- Utilidades de almacenamiento seguro -------------------------------

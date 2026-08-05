@@ -308,6 +308,74 @@
       <ul id="project-list" class="project-grid" aria-labelledby="site-title"></ul>
 
       <div id="no-results" class="no-results" hidden></div>
+
+      <section class="section" id="creadores" aria-labelledby="creators-title">
+        <h2 class="section-title" id="creators-title" data-i18n="creatorsTitle">
+          Quién lo construye
+        </h2>
+        <p class="section-lead" data-i18n="creatorsLead">
+          Ordenado por número de proyectos en el directorio.
+        </p>
+        <ul class="creators-list" id="creators-list"></ul>
+      </section>
+
+      <section class="section" id="categorias" aria-labelledby="categories-title">
+        <h2 class="section-title" id="categories-title" data-i18n="categoriesTitle">
+          Explora por categoría
+        </h2>
+        <div class="categories-grid" id="categories-grid"></div>
+      </section>
+
+      <section class="section" id="contribuir" aria-labelledby="contribute-title">
+        <h2 class="section-title" id="contribute-title" data-i18n="contributeTitle">
+          Agrega tu proyecto
+        </h2>
+        <p class="section-lead" data-i18n="contributeLead">
+          Tres pasos y un pull request. Revisamos que cumpla los cuatro criterios
+          del directorio.
+        </p>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div class="step-body">
+              <strong class="step-title" data-i18n="contributeStep1Title"
+                >Haz un fork del repositorio</strong
+              >
+              <span class="step-text" data-i18n="contributeStep1Body"
+                >github.com/Mteheran/opensource-colombia</span
+              >
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div class="step-body">
+              <strong class="step-title" data-i18n="contributeStep2Title"
+                >Agrega tu proyecto a data.js</strong
+              >
+              <span class="step-text" data-i18n="contributeStep2Body"
+                >Nombre, URL, categoría, creador y descripción en ES, EN y PT.</span
+              >
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div class="step-body">
+              <strong class="step-title" data-i18n="contributeStep3Title"
+                >Abre el pull request</strong
+              >
+              <span class="step-text" data-i18n="contributeStep3Body"
+                >Revisamos y publicamos con el despliegue automático.</span
+              >
+            </div>
+          </li>
+        </ol>
+        <div class="criteria">
+          <span class="criterion" data-i18n="criteria1">De código abierto</span>
+          <span class="criterion" data-i18n="criteria2">Gratuito</span>
+          <span class="criterion" data-i18n="criteria3">Con actividad reciente</span>
+          <span class="criterion" data-i18n="criteria4">Útil para la comunidad</span>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">

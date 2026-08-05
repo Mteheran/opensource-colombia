@@ -977,6 +977,180 @@ a {
   font-weight: 600;
 }
 
+/* --- Secciones (Creadores, Categorías, Contribuir) ---------------------- */
+.section {
+  padding-block: 44px;
+  border-bottom: 1px solid var(--color-border-soft);
+}
+
+.section-title {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.section-lead {
+  margin: 0 0 22px;
+  max-width: 46ch;
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+}
+
+/* Creadores */
+.creators-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.creator-row {
+  display: grid;
+  grid-template-columns: 26px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 4px;
+  border-bottom: 1px solid var(--color-border-faint);
+}
+
+.creator-rank {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #a09a8e;
+}
+:root[data-theme="dark"] .creator-rank {
+  color: var(--color-text-subtle);
+}
+
+.creator-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.creator-name:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.creator-area {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-subtle);
+}
+
+.creator-count {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-primary);
+}
+
+/* Categorías */
+.categories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 640px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.category-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+.category-card:hover {
+  border-color: var(--color-primary);
+}
+
+.category-bar {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 34px;
+  border-radius: 3px;
+}
+
+.category-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.category-count {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--color-text-subtle);
+}
+
+/* Contribuir */
+.steps {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.step-num {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.step-title {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.step-text {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.criteria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border-faint);
+}
+
+.criterion {
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+}
+
 /* --- Pie de página ------------------------------------------------------- */
 .site-footer {
   border-top: 1px solid var(--color-border);
