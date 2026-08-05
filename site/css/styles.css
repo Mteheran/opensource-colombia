@@ -12,7 +12,7 @@
   --color-surface-2: #f2efe8;
   --color-text: #1b1a17;
   --color-text-muted: #55514a;
-  --color-text-subtle: #7a746a;
+  --color-text-subtle: #726c61; /* AA >=4.5:1 sobre bg/surface/surface-2 */
   --color-border: #d9d3c8;
   --color-border-soft: #e3dfd6;
   --color-border-faint: #eeeae1;
@@ -614,6 +614,25 @@ a {
 }
 .featured-dot[aria-selected="true"] {
   background: var(--color-primary);
+}
+
+/* Objetivos táctiles >=44px en móvil (WCAG 2.5.8) */
+@media (max-width: 900px) {
+  .featured-arrow {
+    width: 44px;
+    height: 44px;
+  }
+  .view-btn {
+    padding: 12px 14px;
+  }
+  .chip {
+    padding: 10px 15px;
+  }
+  .featured-dot {
+    height: 44px;
+    padding-block: 19px;
+    background-clip: content-box;
+  }
 }
 
 /* --- Sección "¿Qué es Open Source Colombia?" ---------------------------- */
