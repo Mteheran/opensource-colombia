@@ -248,41 +248,67 @@
 
     const top = document.createElement("div");
     top.className = "card-top";
+    top.append(buildCategoryIcon(p), buildCategoryLabel(p, t));
 
     const h3 = document.createElement("h3");
     h3.className = "project-name";
-    const a = document.createElement("a");
-    a.href = p.url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.textContent = p.name;
-    a.setAttribute(
-      "aria-label",
-      p.name + " — " + t.visitProject
-    );
-    h3.appendChild(a);
-
-    const badge = document.createElement("span");
-    badge.className = "category-badge";
-    badge.textContent = t.categories[p.category] || p.category;
-
-    top.append(h3, badge);
+    h3.appendChild(buildProjectLink(p, t));
 
     const desc = document.createElement("p");
     desc.className = "project-desc";
     desc.textContent = p.description[state.lang] || p.description.es;
 
+    li.append(top, h3, desc, buildTagList(p, 3), buildCreatorMeta(p, t));
+    return li;
+  }
+
+  // --- Piezas reutilizables de tarjeta / fila ----------------------------
+  function buildCategoryIcon(p) {
+    const icon = document.createElement("span");
+    icon.className = "cat-icon";
+    icon.setAttribute("aria-hidden", "true");
+    const meta = window.CATEGORIES[p.category];
+    icon.textContent = meta ? meta.glyph : "";
+    icon.style.color = "var(--cat-" + p.category + ")";
+    return icon;
+  }
+
+  function buildCategoryLabel(p, t) {
+    const label = document.createElement("span");
+    label.className = "cat-label";
+    label.textContent = t.categoriesShort[p.category] || p.category;
+    return label;
+  }
+
+  function buildProjectLink(p, t) {
+    const a = document.createElement("a");
+    a.href = p.url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = p.name;
+    a.setAttribute("aria-label", p.name + " — " + t.visitProject);
+    return a;
+  }
+
+  function buildTagList(p, max) {
+    const ul = document.createElement("ul");
+    ul.className = "tag-list";
+    (p.tags || []).slice(0, max).forEach((tag) => {
+      const li = document.createElement("li");
+      li.className = "tag";
+      li.textContent = tag;
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+
+  function buildCreatorMeta(p, t) {
     const meta = document.createElement("p");
     meta.className = "project-meta";
-    const metaLabel = document.createElement("span");
-    metaLabel.className = "meta-label";
-    metaLabel.textContent = t.creatorLabel + ":";
-    const metaValue = document.createElement("span");
-    metaValue.textContent = " " + p.creator.name;
-    meta.append("👤 ", metaLabel, metaValue);
-
-    li.append(top, desc, meta);
-    return li;
+    const name = document.createElement("strong");
+    name.textContent = p.creator.name;
+    meta.append(t.byLabel + " ", name);
+    return meta;
   }
 
   // --- Utilidades de almacenamiento seguro -------------------------------

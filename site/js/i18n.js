@@ -19,6 +19,7 @@ window.I18N = {
     navCategories: "Categorías",
     navContribute: "Contribuir",
     creatorLabel: "Creador",
+    byLabel: "Por",
     heroTitleA: "Código colombiano",
     heroTitleB: "que el mundo usa",
     heroLead:
@@ -80,6 +81,7 @@ window.I18N = {
     navCategories: "Categories",
     navContribute: "Contribute",
     creatorLabel: "Creator",
+    byLabel: "By",
     heroTitleA: "Colombian code",
     heroTitleB: "the world uses",
     heroLead:
@@ -141,6 +143,7 @@ window.I18N = {
     navCategories: "Categorias",
     navContribute: "Contribuir",
     creatorLabel: "Criador",
+    byLabel: "Por",
     heroTitleA: "Código colombiano",
     heroTitleB: "que o mundo usa",
     heroLead:
