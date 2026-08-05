@@ -51,7 +51,7 @@
     if (!els.heroStats) return;
     const projects = window.PROJECTS.length;
     const categories = new Set(window.PROJECTS.map((p) => p.category)).size;
-    const creators = new Set(window.PROJECTS.map((p) => p.creator)).size;
+    const creators = new Set(window.PROJECTS.map((p) => p.creator.name)).size;
     els.heroStats.textContent =
       projects +
       " " +
@@ -217,7 +217,8 @@
       if (!q) return true;
       const haystack = [
         p.name,
-        p.creator,
+        p.creator.name,
+        (p.tags || []).join(" "),
         p.description[state.lang] || "",
       ]
         .join(" ")
@@ -277,7 +278,7 @@
     metaLabel.className = "meta-label";
     metaLabel.textContent = t.creatorLabel + ":";
     const metaValue = document.createElement("span");
-    metaValue.textContent = " " + p.creator;
+    metaValue.textContent = " " + p.creator.name;
     meta.append("👤 ", metaLabel, metaValue);
 
     li.append(top, desc, meta);

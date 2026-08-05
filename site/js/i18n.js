@@ -39,6 +39,17 @@ window.I18N = {
     visitProject: "Visitar proyecto (se abre en una nueva pestaña)",
     footer:
       "Hecho con ❤️ para la comunidad open source colombiana. Contribuye en GitHub.",
+    techLabel: "Tecnologías",
+    categoriesShort: {
+      all: "Todas",
+      libraries: "Bibliotecas",
+      apis: "APIs",
+      mobile: "Móvil",
+      games: "Videojuegos",
+      extensions: "Extensiones",
+      services: "Servicios",
+      recursos: "Recursos",
+    },
     categories: {
       all: "Todas las categorías",
       libraries: "Bibliotecas y Frameworks",
@@ -89,6 +100,17 @@ window.I18N = {
     visitProject: "Visit project (opens in a new tab)",
     footer:
       "Made with ❤️ for the Colombian open source community. Contribute on GitHub.",
+    techLabel: "Technologies",
+    categoriesShort: {
+      all: "All",
+      libraries: "Libraries",
+      apis: "APIs",
+      mobile: "Mobile",
+      games: "Games",
+      extensions: "Extensions",
+      services: "Services",
+      recursos: "Resources",
+    },
     categories: {
       all: "All categories",
       libraries: "Libraries & Frameworks",
@@ -139,6 +161,17 @@ window.I18N = {
     visitProject: "Visitar projeto (abre em uma nova aba)",
     footer:
       "Feito com ❤️ para a comunidade open source colombiana. Contribua no GitHub.",
+    techLabel: "Tecnologias",
+    categoriesShort: {
+      all: "Todas",
+      libraries: "Bibliotecas",
+      apis: "APIs",
+      mobile: "Móvel",
+      games: "Videojogos",
+      extensions: "Extensões",
+      services: "Serviços",
+      recursos: "Recursos",
+    },
     categories: {
       all: "Todas as categorias",
       libraries: "Bibliotecas e Frameworks",
