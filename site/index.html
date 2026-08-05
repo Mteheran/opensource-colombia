@@ -21,6 +21,7 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e1420" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://opensource-colombia.com/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:type" content="website" />
@@ -69,6 +70,14 @@
       }
     </script>
 
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -78,20 +87,61 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand">
-          <span class="brand-flag" aria-hidden="true">🇨🇴</span>
-          <div class="brand-text">
-            <h1 id="site-title" data-i18n="title">
-              Proyectos Open Source Colombianos
-            </h1>
-            <p id="site-subtitle" class="subtitle" data-i18n="subtitle">
-              Una muestra del talento colombiano en tecnología, programación y
-              datos abiertos.
-            </p>
-          </div>
-        </div>
+        <a
+          class="brand"
+          href="/"
+          aria-label="Open Source Colombia — inicio"
+          data-i18n-attr="aria-label:homeLabel"
+        >
+          <span class="brand-flag" aria-hidden="true">
+            <span class="flag-bar"></span>
+            <span class="flag-bar"></span>
+            <span class="flag-bar"></span>
+          </span>
+          <span class="brand-word" id="site-title">Open Source Colombia</span>
+        </a>
+
+        <nav
+          class="site-nav"
+          aria-label="Principal"
+          data-i18n-attr="aria-label:navLabel"
+        >
+          <a
+            class="nav-link"
+            href="#proyectos"
+            aria-current="page"
+            data-i18n="navProjects"
+            >Proyectos</a
+          >
+          <a class="nav-link" href="#creadores" data-i18n="navCreators"
+            >Creadores</a
+          >
+          <a class="nav-link" href="#categorias" data-i18n="navCategories"
+            >Categorías</a
+          >
+          <a class="nav-link" href="#contribuir" data-i18n="navContribute"
+            >Contribuir</a
+          >
+        </nav>
 
         <div class="header-controls">
+          <label for="search" class="visually-hidden" data-i18n="searchLabel"
+            >Buscar proyectos</label
+          >
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              type="search"
+              id="search"
+              class="search-input"
+              autocomplete="off"
+              placeholder="Buscar por nombre, descripción o creador…"
+              data-i18n-attr="placeholder:searchPlaceholder"
+              aria-describedby="results-count"
+            />
+            <kbd class="search-kbd" aria-hidden="true">/</kbd>
+          </div>
+
           <div class="lang-switch" role="group" aria-label="Idioma" id="lang-group">
             <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">
               ES
@@ -110,13 +160,89 @@
             class="theme-toggle"
             aria-pressed="false"
           >
-            <span class="theme-icon" aria-hidden="true">🌙</span>
+            <span class="theme-icon" aria-hidden="true">◐</span>
           </button>
         </div>
       </div>
     </header>
 
     <main id="main" class="container" tabindex="-1">
+      <section class="hero" id="proyectos" aria-labelledby="hero-title">
+        <div class="hero-intro">
+          <p class="hero-eyebrow" id="hero-stats"></p>
+          <h1 class="hero-title" id="hero-title">
+            <span data-i18n="heroTitleA">Código colombiano</span><br />
+            <em class="hero-title-accent" data-i18n="heroTitleB"
+              >que el mundo usa</em
+            >
+          </h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            Un directorio abierto de proyectos de código abierto creados por la
+            comunidad colombiana: bibliotecas, APIs, herramientas y datos.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#project-list" data-i18n="ctaExplore"
+              >Explorar proyectos</a
+            >
+            <a class="btn btn-secondary" href="#contribuir" data-i18n="ctaAdd"
+              >Agregar el mío</a
+            >
+          </div>
+        </div>
+
+        <section
+          class="featured"
+          id="featured"
+          aria-roledescription="carrusel"
+          aria-label="Destacados"
+          data-i18n-attr="aria-label:featuredLabel"
+        >
+          <div class="featured-head">
+            <p class="featured-eyebrow" data-i18n="featuredLabel">Destacados</p>
+            <div class="featured-nav">
+              <button
+                type="button"
+                class="featured-arrow"
+                id="featured-prev"
+                aria-controls="featured-panel"
+                aria-label="Destacado anterior"
+                data-i18n-attr="aria-label:featuredPrev"
+              >
+                ‹
+              </button>
+              <span class="featured-counter" id="featured-counter" aria-hidden="true"
+                >1 / 3</span
+              >
+              <button
+                type="button"
+                class="featured-arrow"
+                id="featured-next"
+                aria-controls="featured-panel"
+                aria-label="Destacado siguiente"
+                data-i18n-attr="aria-label:featuredNext"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="featured-panel"
+            id="featured-panel"
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
+
+          <div
+            class="featured-dots"
+            id="featured-dots"
+            role="tablist"
+            aria-label="Elegir destacado"
+            data-i18n-attr="aria-label:featuredPick"
+          ></div>
+        </section>
+      </section>
+
       <section class="about" aria-labelledby="about-title">
         <h2 id="about-title" class="about-title" data-i18n="aboutTitle">
           ¿Qué es Open Source Colombia?
@@ -142,41 +268,42 @@
         </div>
       </section>
 
-      <section class="site-stats" aria-label="Totales del directorio">
-        <span class="stat">
-          <strong id="stat-projects" class="stat-num">0</strong>
-          <span class="stat-label" data-i18n="statProjects">proyectos</span>
-        </span>
-        <span class="stat">
-          <strong id="stat-categories" class="stat-num">0</strong>
-          <span class="stat-label" data-i18n="statCategories">categorías</span>
-        </span>
-      </section>
-
-      <section class="controls" aria-label="Búsqueda y filtros">
-        <div class="control-field search-field">
-          <label for="search" class="control-label" data-i18n="searchLabel"
-            >Buscar proyectos</label
-          >
-          <div class="search-wrapper">
-            <span class="search-icon" aria-hidden="true">🔎</span>
-            <input
-              type="search"
-              id="search"
-              class="search-input"
-              autocomplete="off"
-              placeholder="Buscar por nombre, descripción o creador…"
-              data-i18n-attr="placeholder:searchPlaceholder"
-              aria-describedby="results-count"
-            />
-          </div>
+      <section
+        class="filter-bar"
+        aria-label="Filtros"
+        data-i18n-attr="aria-label:filterLabel"
+      >
+        <span class="filter-label" data-i18n="filterChipsLabel">Filtrar:</span>
+        <div class="chips" id="chips">
+          <a class="chip" href="?cat=all" data-cat="all" aria-current="page">Todas</a>
+          <a class="chip" href="?cat=libraries" data-cat="libraries">Bibliotecas</a>
+          <a class="chip" href="?cat=apis" data-cat="apis">APIs</a>
+          <a class="chip" href="?cat=mobile" data-cat="mobile">Móvil</a>
+          <a class="chip" href="?cat=games" data-cat="games">Videojuegos</a>
+          <a class="chip" href="?cat=extensions" data-cat="extensions">Extensiones</a>
+          <a class="chip" href="?cat=services" data-cat="services">Servicios</a>
+          <a class="chip" href="?cat=recursos" data-cat="recursos">Recursos</a>
         </div>
 
-        <div class="control-field filter-field">
-          <label for="category" class="control-label" data-i18n="filterLabel"
-            >Filtrar por categoría</label
-          >
-          <select id="category" class="category-select"></select>
+        <div
+          class="view-switch"
+          id="view-switch"
+          role="group"
+          aria-label="Vista"
+          data-i18n-attr="aria-label:viewLabel"
+        >
+          <button type="button" class="view-btn" data-view="cards" aria-pressed="true">
+            <span class="icon-cards" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </span>
+            <span data-i18n="viewCards">Tarjetas</span>
+          </button>
+          <button type="button" class="view-btn" data-view="list" aria-pressed="false">
+            <span class="icon-list" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+            <span data-i18n="viewList">Lista</span>
+          </button>
         </div>
       </section>
 
@@ -189,9 +316,75 @@
 
       <ul id="project-list" class="project-grid" aria-labelledby="site-title"></ul>
 
-      <p id="no-results" class="no-results" hidden>
-        No se encontraron proyectos que coincidan con tu búsqueda.
-      </p>
+      <div id="no-results" class="no-results" hidden></div>
+
+      <section class="section" id="creadores" aria-labelledby="creators-title">
+        <h2 class="section-title" id="creators-title" data-i18n="creatorsTitle">
+          Quién lo construye
+        </h2>
+        <p class="section-lead" data-i18n="creatorsLead">
+          Ordenado por número de proyectos en el directorio.
+        </p>
+        <ul class="creators-list" id="creators-list"></ul>
+      </section>
+
+      <section class="section" id="categorias" aria-labelledby="categories-title">
+        <h2 class="section-title" id="categories-title" data-i18n="categoriesTitle">
+          Explora por categoría
+        </h2>
+        <div class="categories-grid" id="categories-grid"></div>
+      </section>
+
+      <section class="section" id="contribuir" aria-labelledby="contribute-title">
+        <h2 class="section-title" id="contribute-title" data-i18n="contributeTitle">
+          Agrega tu proyecto
+        </h2>
+        <p class="section-lead" data-i18n="contributeLead">
+          Tres pasos y un pull request. Revisamos que cumpla los cuatro criterios
+          del directorio.
+        </p>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div class="step-body">
+              <strong class="step-title" data-i18n="contributeStep1Title"
+                >Haz un fork del repositorio</strong
+              >
+              <span class="step-text" data-i18n="contributeStep1Body"
+                >github.com/Mteheran/opensource-colombia</span
+              >
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div class="step-body">
+              <strong class="step-title" data-i18n="contributeStep2Title"
+                >Agrega tu proyecto a data.js</strong
+              >
+              <span class="step-text" data-i18n="contributeStep2Body"
+                >Nombre, URL, categoría, creador y descripción en ES, EN y PT.</span
+              >
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div class="step-body">
+              <strong class="step-title" data-i18n="contributeStep3Title"
+                >Abre el pull request</strong
+              >
+              <span class="step-text" data-i18n="contributeStep3Body"
+                >Revisamos y publicamos con el despliegue automático.</span
+              >
+            </div>
+          </li>
+        </ol>
+        <div class="criteria">
+          <span class="criterion" data-i18n="criteria1">De código abierto</span>
+          <span class="criterion" data-i18n="criteria2">Gratuito</span>
+          <span class="criterion" data-i18n="criteria3">Con actividad reciente</span>
+          <span class="criterion" data-i18n="criteria4">Útil para la comunidad</span>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
