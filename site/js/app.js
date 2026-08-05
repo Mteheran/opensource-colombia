@@ -35,26 +35,35 @@
     list: document.getElementById("project-list"),
     resultsCount: document.getElementById("results-count"),
     noResults: document.getElementById("no-results"),
-    statProjects: document.getElementById("stat-projects"),
-    statCategories: document.getElementById("stat-categories"),
+    heroStats: document.getElementById("hero-stats"),
   };
 
   // --- Inicialización ----------------------------------------------------
   function init() {
     applyTheme(state.theme);
-    renderStats(); // totales; se calculan una sola vez desde los datos
     bindEvents();
-    applyLanguage(state.lang); // también hace el render inicial
+    applyLanguage(state.lang); // también hace el render inicial y el eyebrow
   }
 
-  // Totales del directorio, derivados de los datos para no desactualizarse.
-  function renderStats() {
-    const total = window.PROJECTS.length;
-    const categories = new Set(
-      window.PROJECTS.map((p) => p.category)
-    ).size;
-    if (els.statProjects) els.statProjects.textContent = String(total);
-    if (els.statCategories) els.statCategories.textContent = String(categories);
+  // Eyebrow del hero: "N proyectos · M categorías · K creadores",
+  // derivado de los datos para no desactualizarse y traducido por idioma.
+  function renderHeroStats(t) {
+    if (!els.heroStats) return;
+    const projects = window.PROJECTS.length;
+    const categories = new Set(window.PROJECTS.map((p) => p.category)).size;
+    const creators = new Set(window.PROJECTS.map((p) => p.creator)).size;
+    els.heroStats.textContent =
+      projects +
+      " " +
+      t.statProjects +
+      " · " +
+      categories +
+      " " +
+      t.statCategories +
+      " · " +
+      creators +
+      " " +
+      t.statCreators;
   }
 
   function bindEvents() {
@@ -150,6 +159,7 @@
     els.themeToggle.setAttribute("aria-label", t.themeToggle);
 
     buildCategoryOptions(t);
+    renderHeroStats(t);
     updateThemeLabel();
     render();
   }

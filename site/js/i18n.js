@@ -19,8 +19,15 @@ window.I18N = {
     navCategories: "Categorías",
     navContribute: "Contribuir",
     creatorLabel: "Creador",
+    heroTitleA: "Código colombiano",
+    heroTitleB: "que el mundo usa",
+    heroLead:
+      "Un directorio abierto de proyectos de código abierto creados por la comunidad colombiana: bibliotecas, APIs, herramientas y datos.",
+    ctaExplore: "Explorar proyectos",
+    ctaAdd: "Agregar el mío",
     statProjects: "proyectos",
     statCategories: "categorías",
+    statCreators: "creadores",
     aboutTitle: "¿Qué es Open Source Colombia?",
     aboutText:
       "Open Source Colombia es un directorio abierto que reúne proyectos de código abierto creados por la comunidad colombiana: bibliotecas, APIs, herramientas y servicios. Nuestro objetivo es dar visibilidad al talento del país y facilitar que más personas descubran, usen y contribuyan a estos proyectos.",
@@ -62,8 +69,15 @@ window.I18N = {
     navCategories: "Categories",
     navContribute: "Contribute",
     creatorLabel: "Creator",
+    heroTitleA: "Colombian code",
+    heroTitleB: "the world uses",
+    heroLead:
+      "An open directory of open source projects built by the Colombian community: libraries, APIs, tools and data.",
+    ctaExplore: "Explore projects",
+    ctaAdd: "Add mine",
     statProjects: "projects",
     statCategories: "categories",
+    statCreators: "creators",
     aboutTitle: "What is Open Source Colombia?",
     aboutText:
       "Open Source Colombia is an open directory that gathers open source projects built by the Colombian community: libraries, APIs, tools and services. Our goal is to give visibility to the country's talent and make it easier for more people to discover, use and contribute to these projects.",
@@ -105,8 +119,15 @@ window.I18N = {
     navCategories: "Categorias",
     navContribute: "Contribuir",
     creatorLabel: "Criador",
+    heroTitleA: "Código colombiano",
+    heroTitleB: "que o mundo usa",
+    heroLead:
+      "Um diretório aberto de projetos de código aberto criados pela comunidade colombiana: bibliotecas, APIs, ferramentas e dados.",
+    ctaExplore: "Explorar projetos",
+    ctaAdd: "Adicionar o meu",
     statProjects: "projetos",
     statCategories: "categorias",
+    statCreators: "criadores",
     aboutTitle: "O que é Open Source Colombia?",
     aboutText:
       "Open Source Colombia é um diretório aberto que reúne projetos de código aberto criados pela comunidade colombiana: bibliotecas, APIs, ferramentas e serviços. Nosso objetivo é dar visibilidade ao talento do país e facilitar que mais pessoas descubram, usem e contribuam para esses projetos.",
