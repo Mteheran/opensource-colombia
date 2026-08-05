@@ -22,6 +22,7 @@
     query: "",
     category: "all",
     view: resolveInitialView(),
+    featured: 0,
   };
 
   // --- Referencias al DOM ------------------------------------------------
@@ -40,6 +41,12 @@
     resultsCount: document.getElementById("results-count"),
     noResults: document.getElementById("no-results"),
     heroStats: document.getElementById("hero-stats"),
+    featured: document.getElementById("featured"),
+    featuredPanel: document.getElementById("featured-panel"),
+    featuredCounter: document.getElementById("featured-counter"),
+    featuredDots: document.getElementById("featured-dots"),
+    featuredPrev: document.getElementById("featured-prev"),
+    featuredNext: document.getElementById("featured-next"),
   };
 
   // --- Inicialización ----------------------------------------------------
@@ -119,6 +126,29 @@
       const btn = e.target.closest(".view-btn");
       if (btn) setView(btn.dataset.view);
     });
+
+    // Carrusel de destacados (sin autoplay). Flechas del teclado con foco dentro.
+    if (els.featured) {
+      els.featuredPrev.addEventListener("click", () =>
+        setFeatured(state.featured - 1)
+      );
+      els.featuredNext.addEventListener("click", () =>
+        setFeatured(state.featured + 1)
+      );
+      els.featuredDots.addEventListener("click", (e) => {
+        const dot = e.target.closest(".featured-dot");
+        if (dot) setFeatured(Number(dot.dataset.index));
+      });
+      els.featured.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          setFeatured(state.featured - 1);
+        } else if (e.key === "ArrowRight") {
+          e.preventDefault();
+          setFeatured(state.featured + 1);
+        }
+      });
+    }
 
     // Atajos de teclado del buscador: "/" enfoca, "Esc" limpia.
     document.addEventListener("keydown", (e) => {
@@ -203,6 +233,7 @@
 
     updateChips();
     renderHeroStats(t);
+    renderFeatured(t);
     updateThemeLabel();
     render();
   }
@@ -249,6 +280,76 @@
   function updateViewButtons() {
     els.viewButtons.forEach((btn) => {
       btn.setAttribute("aria-pressed", String(btn.dataset.view === state.view));
+    });
+  }
+
+  // --- Carrusel de destacados (sin autoplay) -----------------------------
+  function getFeatured() {
+    return window.PROJECTS.filter((p) => p.featured);
+  }
+
+  function setFeatured(i) {
+    const n = getFeatured().length || 1;
+    state.featured = ((i % n) + n) % n; // wrap-around
+    renderFeatured(window.I18N[state.lang]);
+  }
+
+  function renderFeatured(t) {
+    if (!els.featuredPanel) return;
+    const list = getFeatured();
+    if (!list.length) return;
+    const n = list.length;
+    const i = ((state.featured % n) + n) % n;
+    const p = list[i];
+
+    const cat = document.createElement("div");
+    cat.className = "featured-cat";
+    const icon = document.createElement("span");
+    icon.className = "featured-cat-icon";
+    icon.setAttribute("aria-hidden", "true");
+    const meta = window.CATEGORIES[p.category];
+    icon.textContent = meta ? meta.glyph : "";
+    icon.style.color = "var(--cat-" + p.category + ")";
+    const catLabel = document.createElement("span");
+    catLabel.className = "featured-cat-label";
+    catLabel.textContent = t.categoriesShort[p.category] || p.category;
+    cat.append(icon, catLabel);
+
+    const h2 = document.createElement("h2");
+    h2.className = "featured-name";
+    h2.appendChild(buildProjectLink(p, t));
+
+    const desc = document.createElement("p");
+    desc.className = "featured-desc";
+    desc.textContent = p.description[state.lang] || p.description.es;
+
+    const tags = buildTagList(p, 3);
+    tags.classList.add("featured-tags");
+
+    const by = document.createElement("p");
+    by.className = "featured-by";
+    const byLink = document.createElement("a");
+    byLink.href = "https://github.com/" + p.creator.github;
+    byLink.target = "_blank";
+    byLink.rel = "noopener noreferrer";
+    byLink.textContent = p.creator.name;
+    by.append(t.byLabel + " ", byLink);
+
+    els.featuredPanel.innerHTML = "";
+    els.featuredPanel.append(cat, h2, desc, tags, by);
+
+    els.featuredCounter.textContent = i + 1 + " / " + n;
+
+    els.featuredDots.innerHTML = "";
+    list.forEach((proj, k) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "featured-dot";
+      dot.dataset.index = String(k);
+      dot.setAttribute("role", "tab");
+      dot.setAttribute("aria-label", proj.name);
+      dot.setAttribute("aria-selected", String(k === i));
+      els.featuredDots.appendChild(dot);
     });
   }
 

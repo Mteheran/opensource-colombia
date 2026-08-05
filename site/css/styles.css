@@ -376,8 +376,19 @@ a {
 
 /* --- Hero ---------------------------------------------------------------- */
 .hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 48px;
+  align-items: end;
   padding-block: 52px 40px;
   border-bottom: 1px solid var(--color-border-soft);
+}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: stretch;
+  }
 }
 
 .hero-eyebrow {
@@ -451,6 +462,158 @@ a {
 }
 .btn-secondary:hover {
   background: var(--color-surface-2);
+}
+
+/* --- Carrusel de destacados --------------------------------------------- */
+.featured {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  padding: 22px;
+}
+
+.featured-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.featured-eyebrow {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.featured-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.featured-counter {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-subtle);
+}
+
+.featured-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+.featured-arrow:hover {
+  background: var(--color-surface-2);
+}
+
+.featured-cat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.featured-cat-icon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-2);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+.featured-cat-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-subtle);
+}
+
+.featured-name {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1;
+}
+.featured-name a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+.featured-name a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.featured-desc {
+  margin: 0 0 14px;
+  min-height: 72px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.featured-tags {
+  margin-bottom: 14px;
+}
+.featured-tags .tag {
+  font-size: 12px;
+  padding: 3px 9px;
+  background: #eef1f5;
+  color: var(--color-primary);
+}
+:root[data-theme="dark"] .featured-tags .tag {
+  background: var(--color-surface-2);
+}
+
+.featured-by {
+  margin: 0;
+  border-top: 1px solid var(--color-border-soft);
+  padding-top: 14px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+.featured-by a {
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.featured-by a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.featured-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+}
+.featured-dot {
+  width: 26px;
+  height: 6px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-border);
+  cursor: pointer;
+}
+.featured-dot[aria-selected="true"] {
+  background: var(--color-primary);
 }
 
 /* --- Sección "¿Qué es Open Source Colombia?" ---------------------------- */
