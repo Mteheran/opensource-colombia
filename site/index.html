@@ -211,12 +211,17 @@
         </div>
       </section>
 
-      <section class="controls" aria-label="Búsqueda y filtros">
-        <div class="control-field filter-field">
-          <label for="category" class="control-label" data-i18n="filterLabel"
-            >Filtrar por categoría</label
-          >
-          <select id="category" class="category-select"></select>
+      <section class="filter-bar" aria-label="Filtros">
+        <span class="filter-label" data-i18n="filterChipsLabel">Filtrar:</span>
+        <div class="chips" id="chips">
+          <a class="chip" href="?cat=all" data-cat="all" aria-current="page">Todas</a>
+          <a class="chip" href="?cat=libraries" data-cat="libraries">Bibliotecas</a>
+          <a class="chip" href="?cat=apis" data-cat="apis">APIs</a>
+          <a class="chip" href="?cat=mobile" data-cat="mobile">Móvil</a>
+          <a class="chip" href="?cat=games" data-cat="games">Videojuegos</a>
+          <a class="chip" href="?cat=extensions" data-cat="extensions">Extensiones</a>
+          <a class="chip" href="?cat=services" data-cat="services">Servicios</a>
+          <a class="chip" href="?cat=recursos" data-cat="recursos">Recursos</a>
         </div>
       </section>
 
@@ -229,9 +234,7 @@
 
       <ul id="project-list" class="project-grid" aria-labelledby="site-title"></ul>
 
-      <p id="no-results" class="no-results" hidden>
-        No se encontraron proyectos que coincidan con tu búsqueda.
-      </p>
+      <div id="no-results" class="no-results" hidden></div>
     </main>
 
     <footer class="site-footer">

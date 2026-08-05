@@ -31,7 +31,8 @@
     themeToggle: document.getElementById("theme-toggle"),
     themeIcon: document.querySelector(".theme-icon"),
     search: document.getElementById("search"),
-    category: document.getElementById("category"),
+    chips: document.getElementById("chips"),
+    chipList: Array.from(document.querySelectorAll(".chip")),
     list: document.getElementById("project-list"),
     resultsCount: document.getElementById("results-count"),
     noResults: document.getElementById("no-results"),
@@ -40,9 +41,25 @@
 
   // --- Inicialización ----------------------------------------------------
   function init() {
+    readUrlState(); // ?cat= antes del primer render
     applyTheme(state.theme);
     bindEvents();
     applyLanguage(state.lang); // también hace el render inicial y el eyebrow
+  }
+
+  // Lee el estado inicial desde la URL (?cat=).
+  function readUrlState() {
+    const params = new URLSearchParams(location.search);
+    const cat = params.get("cat");
+    if (cat === "all" || CATEGORY_ORDER.includes(cat)) state.category = cat;
+  }
+
+  // Construye la URL que refleja el estado actual (query string compartible).
+  function currentUrl() {
+    const params = new URLSearchParams();
+    if (state.category !== "all") params.set("cat", state.category);
+    const qs = params.toString();
+    return location.pathname + (qs ? "?" + qs : "");
   }
 
   // Eyebrow del hero: "N proyectos · M categorías · K creadores",
@@ -78,9 +95,15 @@
       render();
     });
 
-    els.category.addEventListener("change", (e) => {
-      state.category = e.target.value;
-      render();
+    // Chips de categoría: son enlaces reales (funcionan sin JS). Con JS
+    // interceptamos el clic simple para filtrar sin recargar.
+    els.chips.addEventListener("click", (e) => {
+      const chip = e.target.closest(".chip");
+      if (!chip) return;
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)
+        return; // deja abrir en pestaña nueva
+      e.preventDefault();
+      setCategory(chip.dataset.cat);
     });
 
     // Atajos de teclado del buscador: "/" enfoca, "Esc" limpia.
@@ -158,23 +181,42 @@
     els.langGroup.setAttribute("aria-label", t.languageLabel);
     els.themeToggle.setAttribute("aria-label", t.themeToggle);
 
-    buildCategoryOptions(t);
+    // Etiqueta de cada chip (nombre corto de la categoría)
+    els.chipList.forEach((chip) => {
+      const key = chip.dataset.cat;
+      chip.textContent = t.categoriesShort[key] || key;
+    });
+
+    updateChips();
     renderHeroStats(t);
     updateThemeLabel();
     render();
   }
 
-  function buildCategoryOptions(t) {
-    const current = state.category;
-    els.category.innerHTML = "";
-    const opts = ["all", ...CATEGORY_ORDER];
-    opts.forEach((key) => {
-      const opt = document.createElement("option");
-      opt.value = key;
-      opt.textContent = t.categories[key];
-      els.category.appendChild(opt);
+  // --- Filtro por categoría (chips) --------------------------------------
+  function setCategory(cat) {
+    state.category = cat === "all" || CATEGORY_ORDER.includes(cat) ? cat : "all";
+    updateChips();
+    history.replaceState(null, "", currentUrl());
+    render();
+  }
+
+  function updateChips() {
+    els.chipList.forEach((chip) => {
+      const active = chip.dataset.cat === state.category;
+      chip.classList.toggle("is-active", active);
+      if (active) chip.setAttribute("aria-current", "page");
+      else chip.removeAttribute("aria-current");
     });
-    els.category.value = current;
+  }
+
+  function clearFilters() {
+    state.category = "all";
+    state.query = "";
+    els.search.value = "";
+    updateChips();
+    history.replaceState(null, "", currentUrl());
+    render();
   }
 
   // --- Tema --------------------------------------------------------------
@@ -238,8 +280,26 @@
 
     const empty = results.length === 0;
     els.noResults.hidden = !empty;
-    els.noResults.textContent = t.noResults;
     els.list.hidden = empty;
+    if (empty) renderNoResults(t);
+  }
+
+  function renderNoResults(t) {
+    els.noResults.innerHTML = "";
+    const msg = document.createElement("p");
+    msg.className = "no-results-msg";
+    msg.textContent = t.noResults;
+    const clear = document.createElement("a");
+    clear.className = "clear-filters";
+    clear.href = "?cat=all";
+    clear.textContent = t.clearFilters;
+    clear.addEventListener("click", (e) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)
+        return;
+      e.preventDefault();
+      clearFilters();
+    });
+    els.noResults.append(msg, clear);
   }
 
   function buildCard(p, t) {
