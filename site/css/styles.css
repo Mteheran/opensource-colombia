@@ -128,47 +128,135 @@ a {
 
 .header-inner {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
   align-items: center;
-  justify-content: space-between;
-  padding-block: 20px;
+  gap: 28px;
+  padding-block: 16px;
 }
 
+/* --- Logotipo ------------------------------------------------------------ */
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 11px;
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 .brand-flag {
-  font-size: 2.2rem;
+  display: flex;
+  gap: 2.5px;
+}
+
+.flag-bar {
+  width: 6px;
+  height: 24px;
+  border-radius: 2px;
+}
+.flag-bar:nth-child(1) {
+  background: var(--color-flag-yellow);
+}
+.flag-bar:nth-child(2) {
+  background: var(--color-primary);
+}
+.flag-bar:nth-child(3) {
+  background: var(--color-flag-red);
+}
+
+.brand-word {
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* --- Navegación principal ------------------------------------------------ */
+.site-nav {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+.nav-link:hover {
+  color: var(--color-text);
+}
+.nav-link[aria-current="page"] {
+  color: var(--color-text);
+  border-bottom-color: var(--color-primary);
+}
+
+/* --- Bloque derecho del header ------------------------------------------- */
+.header-controls {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- Buscador del header ------------------------------------------------- */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 7px 10px;
+}
+.search-box:focus-within {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.search-icon {
+  flex: 0 0 auto;
+  color: var(--color-text-subtle);
+  font-size: 15px;
   line-height: 1;
 }
 
-.brand-text h1 {
-  margin: 0;
-  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
-  line-height: 1.2;
+.search-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-size: 14px;
+  padding: 0;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-input::placeholder {
+  color: var(--color-text-subtle);
 }
 
-.subtitle {
-  margin: 4px 0 0;
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
-  max-width: 52ch;
-}
-
-.header-controls {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.search-kbd {
+  flex: 0 0 auto;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--color-text-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 1px 5px;
 }
 
 /* --- Selector de idioma -------------------------------------------------- */
 .lang-switch {
   display: inline-flex;
-  background: var(--color-surface-2);
+  flex: 0 0 auto;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   overflow: hidden;
@@ -176,12 +264,13 @@ a {
 
 .lang-btn {
   border: 0;
-  background: transparent;
+  background: var(--color-surface);
   color: var(--color-text-muted);
-  font: inherit;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 7px 9px;
   cursor: pointer;
 }
 .lang-btn:hover {
@@ -197,17 +286,48 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: var(--color-surface-2);
+  background: var(--color-surface);
   color: var(--color-text);
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 16px;
+  line-height: 1;
 }
 .theme-toggle:hover {
-  background: var(--color-border);
+  background: var(--color-surface-2);
+}
+
+/* --- Header en móvil ----------------------------------------------------- */
+@media (max-width: 900px) {
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .site-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .header-controls {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+  }
+  .search-box {
+    order: -1;
+    width: 100%;
+  }
+  .lang-btn {
+    padding: 11px 14px;
+  }
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 /* --- Barra de totales / estado ------------------------------------------ */
@@ -300,20 +420,6 @@ a {
   color: var(--color-text-muted);
 }
 
-.search-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-icon {
-  position: absolute;
-  left: 14px;
-  pointer-events: none;
-  font-size: 1rem;
-}
-
-.search-input,
 .category-select {
   width: 100%;
   font: inherit;
@@ -322,13 +428,6 @@ a {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: 12px 14px;
-}
-
-.search-input {
-  padding-left: 42px;
-}
-
-.category-select {
   cursor: pointer;
   appearance: none;
   background-image: linear-gradient(45deg, transparent 50%, var(--color-text-muted) 50%),
@@ -337,10 +436,6 @@ a {
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
   padding-right: 40px;
-}
-
-.search-input::placeholder {
-  color: var(--color-text-muted);
 }
 
 /* --- Contador de resultados --------------------------------------------- */

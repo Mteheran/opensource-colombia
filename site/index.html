@@ -21,6 +21,7 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e1420" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href="https://opensource-colombia.com/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
     <meta property="og:type" content="website" />
@@ -86,20 +87,56 @@
 
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand">
-          <span class="brand-flag" aria-hidden="true">🇨🇴</span>
-          <div class="brand-text">
-            <h1 id="site-title" data-i18n="title">
-              Proyectos Open Source Colombianos
-            </h1>
-            <p id="site-subtitle" class="subtitle" data-i18n="subtitle">
-              Una muestra del talento colombiano en tecnología, programación y
-              datos abiertos.
-            </p>
-          </div>
-        </div>
+        <a class="brand" href="/" aria-label="Open Source Colombia — inicio">
+          <span class="brand-flag" aria-hidden="true">
+            <span class="flag-bar"></span>
+            <span class="flag-bar"></span>
+            <span class="flag-bar"></span>
+          </span>
+          <span class="brand-word" id="site-title">Open Source Colombia</span>
+        </a>
+
+        <nav
+          class="site-nav"
+          aria-label="Principal"
+          data-i18n-attr="aria-label:navLabel"
+        >
+          <a
+            class="nav-link"
+            href="#proyectos"
+            aria-current="page"
+            data-i18n="navProjects"
+            >Proyectos</a
+          >
+          <a class="nav-link" href="#creadores" data-i18n="navCreators"
+            >Creadores</a
+          >
+          <a class="nav-link" href="#categorias" data-i18n="navCategories"
+            >Categorías</a
+          >
+          <a class="nav-link" href="#contribuir" data-i18n="navContribute"
+            >Contribuir</a
+          >
+        </nav>
 
         <div class="header-controls">
+          <label for="search" class="visually-hidden" data-i18n="searchLabel"
+            >Buscar proyectos</label
+          >
+          <div class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              type="search"
+              id="search"
+              class="search-input"
+              autocomplete="off"
+              placeholder="Buscar por nombre, descripción o creador…"
+              data-i18n-attr="placeholder:searchPlaceholder"
+              aria-describedby="results-count"
+            />
+            <kbd class="search-kbd" aria-hidden="true">/</kbd>
+          </div>
+
           <div class="lang-switch" role="group" aria-label="Idioma" id="lang-group">
             <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">
               ES
@@ -118,7 +155,7 @@
             class="theme-toggle"
             aria-pressed="false"
           >
-            <span class="theme-icon" aria-hidden="true">🌙</span>
+            <span class="theme-icon" aria-hidden="true">◐</span>
           </button>
         </div>
       </div>
@@ -162,24 +199,6 @@
       </section>
 
       <section class="controls" aria-label="Búsqueda y filtros">
-        <div class="control-field search-field">
-          <label for="search" class="control-label" data-i18n="searchLabel"
-            >Buscar proyectos</label
-          >
-          <div class="search-wrapper">
-            <span class="search-icon" aria-hidden="true">🔎</span>
-            <input
-              type="search"
-              id="search"
-              class="search-input"
-              autocomplete="off"
-              placeholder="Buscar por nombre, descripción o creador…"
-              data-i18n-attr="placeholder:searchPlaceholder"
-              aria-describedby="results-count"
-            />
-          </div>
-        </div>
-
         <div class="control-field filter-field">
           <label for="category" class="control-label" data-i18n="filterLabel"
             >Filtrar por categoría</label

@@ -73,6 +73,31 @@
       state.category = e.target.value;
       render();
     });
+
+    // Atajos de teclado del buscador: "/" enfoca, "Esc" limpia.
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "/" && !isEditableTarget(e.target)) {
+        e.preventDefault();
+        els.search.focus();
+      } else if (e.key === "Escape" && document.activeElement === els.search) {
+        els.search.value = "";
+        state.query = "";
+        render();
+        els.search.blur();
+      }
+    });
+  }
+
+  // ¿El foco está en un campo editable? Evita capturar "/" mientras se escribe.
+  function isEditableTarget(node) {
+    if (!node) return false;
+    const tag = node.tagName;
+    return (
+      tag === "INPUT" ||
+      tag === "TEXTAREA" ||
+      tag === "SELECT" ||
+      node.isContentEditable === true
+    );
   }
 
   // --- Idioma ------------------------------------------------------------
@@ -160,7 +185,7 @@
   function applyTheme(theme) {
     state.theme = theme;
     els.html.setAttribute("data-theme", theme);
-    els.themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
+    els.themeIcon.textContent = theme === "dark" ? "◑" : "◐";
     els.themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
     updateThemeLabel();
   }
