@@ -538,6 +538,65 @@ a {
   color: var(--color-primary-contrast);
 }
 
+/* --- Conmutador de vista ------------------------------------------------- */
+.view-switch {
+  margin-left: auto;
+  display: flex;
+  flex: 0 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.view-btn + .view-btn {
+  border-left: 1px solid var(--color-border);
+}
+.view-btn:not([aria-pressed="true"]):hover {
+  color: var(--color-text);
+}
+.view-btn[aria-pressed="true"] {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+.view-btn + .view-btn[aria-pressed="true"] {
+  border-left-color: var(--color-primary);
+}
+
+.icon-cards {
+  display: grid;
+  grid-template-columns: 5px 5px;
+  grid-template-rows: 5px 5px;
+  gap: 2.5px;
+}
+.icon-cards span {
+  background: currentColor;
+  border-radius: 1px;
+}
+.icon-list {
+  display: grid;
+  gap: 2.5px;
+  width: 13px;
+}
+.icon-list span {
+  height: 2.5px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
 /* --- Contador de resultados --------------------------------------------- */
 .results-count {
   margin: 12px 0 20px;
@@ -665,6 +724,79 @@ a {
 .project-meta strong {
   font-weight: 700;
   color: var(--color-text);
+}
+
+/* --- Vista lista --------------------------------------------------------- */
+.project-list {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.project-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1.6fr) 130px minmax(0, 1fr) 170px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 6px;
+  border-bottom: 1px solid var(--color-border-faint);
+}
+
+.row-main {
+  min-width: 0;
+}
+.row-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.2;
+}
+.row-name a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+.row-name a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.row-name a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.row-desc {
+  margin: 2px 0 0;
+  color: var(--color-text-muted);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.row-creator {
+  font-size: 13.5px;
+  color: var(--color-text-muted);
+}
+.row-creator strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+  .project-row {
+    grid-template-columns: 38px 1fr;
+    column-gap: 12px;
+    row-gap: 4px;
+    align-items: start;
+  }
+  .project-row .cat-icon {
+    grid-row: 1 / span 4;
+  }
+  .row-main,
+  .project-row .cat-label,
+  .project-row .tag-list,
+  .row-creator {
+    grid-column: 2;
+  }
 }
 
 /* --- Sin resultados ------------------------------------------------------ */

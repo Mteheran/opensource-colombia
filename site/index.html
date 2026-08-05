@@ -223,6 +223,27 @@
           <a class="chip" href="?cat=services" data-cat="services">Servicios</a>
           <a class="chip" href="?cat=recursos" data-cat="recursos">Recursos</a>
         </div>
+
+        <div
+          class="view-switch"
+          id="view-switch"
+          role="group"
+          aria-label="Vista"
+          data-i18n-attr="aria-label:viewLabel"
+        >
+          <button type="button" class="view-btn" data-view="cards" aria-pressed="true">
+            <span class="icon-cards" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </span>
+            <span data-i18n="viewCards">Tarjetas</span>
+          </button>
+          <button type="button" class="view-btn" data-view="list" aria-pressed="false">
+            <span class="icon-list" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+            <span data-i18n="viewList">Lista</span>
+          </button>
+        </div>
       </section>
 
       <p

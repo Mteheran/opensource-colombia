@@ -21,6 +21,7 @@
     theme: resolveInitialTheme(),
     query: "",
     category: "all",
+    view: resolveInitialView(),
   };
 
   // --- Referencias al DOM ------------------------------------------------
@@ -33,6 +34,8 @@
     search: document.getElementById("search"),
     chips: document.getElementById("chips"),
     chipList: Array.from(document.querySelectorAll(".chip")),
+    viewSwitch: document.getElementById("view-switch"),
+    viewButtons: Array.from(document.querySelectorAll(".view-btn")),
     list: document.getElementById("project-list"),
     resultsCount: document.getElementById("results-count"),
     noResults: document.getElementById("no-results"),
@@ -41,23 +44,28 @@
 
   // --- Inicialización ----------------------------------------------------
   function init() {
-    readUrlState(); // ?cat= antes del primer render
+    readUrlState(); // ?cat= y ?view= antes del primer render
+    updateViewButtons();
     applyTheme(state.theme);
     bindEvents();
     applyLanguage(state.lang); // también hace el render inicial y el eyebrow
   }
 
-  // Lee el estado inicial desde la URL (?cat=).
+  // Lee el estado inicial desde la URL (?cat=, ?view=). La URL gana sobre
+  // el valor recordado en localStorage cuando el parámetro está presente.
   function readUrlState() {
     const params = new URLSearchParams(location.search);
     const cat = params.get("cat");
     if (cat === "all" || CATEGORY_ORDER.includes(cat)) state.category = cat;
+    const view = params.get("view");
+    if (view === "list" || view === "cards") state.view = view;
   }
 
   // Construye la URL que refleja el estado actual (query string compartible).
   function currentUrl() {
     const params = new URLSearchParams();
     if (state.category !== "all") params.set("cat", state.category);
+    if (state.view === "list") params.set("view", "list");
     const qs = params.toString();
     return location.pathname + (qs ? "?" + qs : "");
   }
@@ -104,6 +112,12 @@
         return; // deja abrir en pestaña nueva
       e.preventDefault();
       setCategory(chip.dataset.cat);
+    });
+
+    // Conmutador de vista tarjetas / lista.
+    els.viewSwitch.addEventListener("click", (e) => {
+      const btn = e.target.closest(".view-btn");
+      if (btn) setView(btn.dataset.view);
     });
 
     // Atajos de teclado del buscador: "/" enfoca, "Esc" limpia.
@@ -219,6 +233,25 @@
     render();
   }
 
+  // --- Vista (tarjetas / lista) ------------------------------------------
+  function resolveInitialView() {
+    return safeGet("oscol-view") === "list" ? "list" : "cards";
+  }
+
+  function setView(view) {
+    state.view = view === "list" ? "list" : "cards";
+    safeSet("oscol-view", state.view);
+    updateViewButtons();
+    history.replaceState(null, "", currentUrl());
+    render();
+  }
+
+  function updateViewButtons() {
+    els.viewButtons.forEach((btn) => {
+      btn.setAttribute("aria-pressed", String(btn.dataset.view === state.view));
+    });
+  }
+
   // --- Tema --------------------------------------------------------------
   function resolveInitialTheme() {
     const stored = safeGet("oscol-theme");
@@ -273,8 +306,10 @@
     const t = window.I18N[state.lang];
     const results = getFilteredProjects();
 
+    els.list.className = state.view === "list" ? "project-list" : "project-grid";
     els.list.innerHTML = "";
-    results.forEach((p) => els.list.appendChild(buildCard(p, t)));
+    const build = state.view === "list" ? buildRow : buildCard;
+    results.forEach((p) => els.list.appendChild(build(p, t)));
 
     els.resultsCount.textContent = t.resultsCount(results.length);
 
@@ -369,6 +404,37 @@
     name.textContent = p.creator.name;
     meta.append(t.byLabel + " ", name);
     return meta;
+  }
+
+  // Fila de la vista lista (mismos datos que la tarjeta, en columnas).
+  function buildRow(p, t) {
+    const li = document.createElement("li");
+    li.className = "project-row";
+
+    const main = document.createElement("div");
+    main.className = "row-main";
+    const h3 = document.createElement("h3");
+    h3.className = "row-name";
+    h3.appendChild(buildProjectLink(p, t));
+    const desc = document.createElement("p");
+    desc.className = "row-desc";
+    desc.textContent = p.description[state.lang] || p.description.es;
+    main.append(h3, desc);
+
+    const creator = document.createElement("span");
+    creator.className = "row-creator";
+    const name = document.createElement("strong");
+    name.textContent = p.creator.name;
+    creator.appendChild(name);
+
+    li.append(
+      buildCategoryIcon(p),
+      main,
+      buildCategoryLabel(p, t),
+      buildTagList(p, 2),
+      creator
+    );
+    return li;
   }
 
   // --- Utilidades de almacenamiento seguro -------------------------------
