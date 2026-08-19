@@ -29,6 +29,7 @@ window.CATEGORIES = {
     john: { name: "John Guerra", github: "john-guerra", area: "Datos geográficos" },
     julian: { name: "Julian Dario Luna Patiño", github: "Kaddo-kdd", area: "IA, CLI, DevTools" },
     mateo: { name: "Mateo Robayo Rodríguez", github: "carenalgas", area: "Godot, videojuegos" },
+    alfonso: { name: "Alfonso Hernandez", github: "ponchale", area: "JS, Python, Rust, Software " },
   };
 
   window.PROJECTS = [
@@ -297,6 +298,18 @@ window.CATEGORIES = {
         es: "Archivo GeoJSON con los límites geográficos de los departamentos de Colombia, listo para usar en mapas y visualizaciones con D3.js, Power BI, Metabase y otras herramientas.",
         en: "GeoJSON file with the geographic boundaries of Colombia's departments, ready to use in maps and visualizations with D3.js, Power BI, Metabase and other tools.",
         pt: "Arquivo GeoJSON com os limites geográficos dos departamentos da Colômbia, pronto para usar em mapas e visualizações com D3.js, Power BI, Metabase e outras ferramentas.",
+      },
+    },
+    {
+      name: "Midori Browser",
+      url: "https://astian.org/midori-browser",
+      category: "services",
+      creator: C.alfonso,
+      tags: ["Browser, search engine, privacy"],
+      description: {
+        es: "Navegador web ligero rapido y seguro, con gran enfoque a la privacidad que incluye navegacion VPN, bloqueador de anuncios y alta personalizacion.",
+        en: "Lightweight, fast, and secure browser with a strong focus on privacy, including VPN browsing, ad blocker, and high customization..",
+        pt: "Navegador leve, rápido e seguro com forte foco em privacidade, incluindo navegação VPN, bloqueador de anúncios e alta personalização..",
       },
     },
   ];
