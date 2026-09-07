@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 46 projects · 7 categories
+> 📊 **Totals:** 52 projects · 8 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -76,6 +76,40 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Credit and debit card component for payment forms and saved-card views, with live brand detection, a 3D flip and CSS-variable theming. Dependency-free, for React, Vue, Svelte and vanilla JavaScript in a single package.
 - **Category:** UI components / payment forms
 - **Creator:** Juan David García Rincón
+
+---
+
+## 🤖 AI Agents & Protocols
+
+### 🔹 [AI Maestro](https://github.com/23blocks-OS/ai-maestro)
+- **Description:** AI agent orchestrator with a web dashboard: semantic memory, code-graph queries and agent-to-agent messaging. Run Claude, Codex or any agent from one place, even spread across several machines.
+- **Category:** AI agent orchestration
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Messaging Protocol](https://github.com/agentmessaging/protocol)
+- **Description:** Open standard for agent-to-agent messaging, with Ed25519-signed envelopes, federation across providers and delivery that must be proven rather than assumed.
+- **Category:** Protocol / Agent messaging
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [lolabot](https://github.com/23blocks-OS/lolabot)
+- **Description:** Chief-of-staff assistant for Claude Code: email, semantic memory across sessions, task management and content security. Runs standalone or on AI Maestro.
+- **Category:** Personal assistant / AI agents
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Identity](https://github.com/agentmessaging/agent-identity)
+- **Description:** Identity, authentication and authorization for AI agents using Ed25519 keys and OAuth 2.0 token exchange.
+- **Category:** Protocol / Identity and authentication
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Actions Protocol](https://github.com/agentmessaging/agent-actions)
+- **Description:** Open protocol for structured interactions between user interfaces and AI agents.
+- **Category:** Protocol / UI-to-agent interaction
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
+- **Description:** Plugin builder for AI Maestro: assembles personalities, skills, messaging and identity into a complete plugin from a manifest.
+- **Category:** Tooling for AI agents
+- **Creator:** Juan Peláez (23blocks)
 
 ---
 

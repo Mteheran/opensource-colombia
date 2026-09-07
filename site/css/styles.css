@@ -40,6 +40,7 @@
 
   /* --- Colores de categoría (monograma) --- */
   --cat-libraries: #1b4db1;
+  --cat-agents: #8a1c6e;
   --cat-apis: #0e7c66;
   --cat-mobile: #7a3bb5;
   --cat-games: #c8102e;
@@ -66,6 +67,7 @@
   --shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 18px 44px rgba(0, 0, 0, 0.5);
 
   --cat-libraries: #8fb6ee;
+  --cat-agents: #e79ad0;
   --cat-apis: #5fc9ad;
   --cat-mobile: #c3a0ea;
   --cat-games: #ff8b98;

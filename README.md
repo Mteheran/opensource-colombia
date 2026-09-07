@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 46 proyectos · 7 categorías
+> 📊 **Totales:** 52 proyectos · 8 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -76,6 +76,40 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Componente de tarjeta de crédito y débito para formularios de pago y vistas de tarjetas guardadas, con detección de marca en vivo, giro 3D y temas por variables CSS. Sin dependencias, para React, Vue, Svelte y JavaScript puro en un solo paquete.
 - **Categoría:** Componentes de UI / formularios de pago
 - **Creador:** Juan David García Rincón
+
+---
+
+## 🤖 Agentes IA y Protocolos
+
+### 🔹 [AI Maestro](https://github.com/23blocks-OS/ai-maestro)
+- **Descripción:** Orquestador de agentes de IA con panel web: memoria semántica, consultas al grafo de código y mensajería entre agentes. Gestiona Claude, Codex o cualquier agente desde un solo lugar, incluso repartidos entre varios computadores.
+- **Categoría:** Orquestación de agentes IA
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Messaging Protocol](https://github.com/agentmessaging/protocol)
+- **Descripción:** Estándar abierto de mensajería entre agentes de IA, con sobres firmados con Ed25519, federación entre proveedores y entrega que debe comprobarse en lugar de asumirse.
+- **Categoría:** Protocolo / Mensajería entre agentes
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [lolabot](https://github.com/23blocks-OS/lolabot)
+- **Descripción:** Asistente tipo jefe de gabinete para Claude Code: correo, memoria semántica entre sesiones, gestión de tareas y seguridad de contenido. Funciona solo o sobre AI Maestro.
+- **Categoría:** Asistente personal / Agentes IA
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Identity](https://github.com/agentmessaging/agent-identity)
+- **Descripción:** Identidad, autenticación y autorización para agentes de IA usando claves Ed25519 e intercambio de tokens OAuth 2.0.
+- **Categoría:** Protocolo / Identidad y autenticación
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Actions Protocol](https://github.com/agentmessaging/agent-actions)
+- **Descripción:** Protocolo abierto para interacciones estructuradas entre interfaces de usuario y agentes de IA.
+- **Categoría:** Protocolo / Interacción UI-agente
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
+- **Descripción:** Constructor de plugins para AI Maestro: ensambla personalidades, skills, mensajería e identidad en un plugin completo a partir de un manifiesto.
+- **Categoría:** Herramientas para agentes IA
+- **Creador:** Juan Peláez (23blocks)
 
 ---
 

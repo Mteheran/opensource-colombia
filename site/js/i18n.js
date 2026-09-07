@@ -77,6 +77,7 @@ window.I18N = {
     categoriesShort: {
       all: "Todas",
       libraries: "Bibliotecas",
+      agents: "Agentes IA",
       apis: "APIs",
       mobile: "Móvil",
       games: "Videojuegos",
@@ -87,6 +88,7 @@ window.I18N = {
     categories: {
       all: "Todas las categorías",
       libraries: "Bibliotecas y Frameworks",
+      agents: "Agentes IA y Protocolos",
       apis: "APIs y Datos Abiertos",
       mobile: "Móvil, Juegos y Herramientas",
       games: "Videojuegos",
@@ -172,6 +174,7 @@ window.I18N = {
     categoriesShort: {
       all: "All",
       libraries: "Libraries",
+      agents: "AI Agents",
       apis: "APIs",
       mobile: "Mobile",
       games: "Games",
@@ -182,6 +185,7 @@ window.I18N = {
     categories: {
       all: "All categories",
       libraries: "Libraries & Frameworks",
+      agents: "AI Agents & Protocols",
       apis: "APIs & Open Data",
       mobile: "Mobile, Games & Tools",
       games: "Video Games",
@@ -267,6 +271,7 @@ window.I18N = {
     categoriesShort: {
       all: "Todas",
       libraries: "Bibliotecas",
+      agents: "Agentes IA",
       apis: "APIs",
       mobile: "Móvel",
       games: "Videojogos",
@@ -277,6 +282,7 @@ window.I18N = {
     categories: {
       all: "Todas as categorias",
       libraries: "Bibliotecas e Frameworks",
+      agents: "Agentes IA e Protocolos",
       apis: "APIs e Dados Abertos",
       mobile: "Móvel, Jogos e Ferramentas",
       games: "Videojogos",
