@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 46 proyectos · 7 categorías
+> 📊 **Totales:** 47 proyectos · 7 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -252,6 +252,11 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Tipo de campo para Drupal que genera números seriales autoincrementales, globales o reiniciables por periodo, útiles para facturas e identificadores.
 - **Categoría:** Módulo de Drupal
 - **Creador:** Fernando Muñoz
+
+### 🔹 [SQL Server Bacpac Manager](https://github.com/carandev/sql-server-bacpac-manager)
+- **Descripción:** Plugin de JetBrains que permite exportar e importar archivos `.bacpac` de SQL Server directamente desde el menú contextual de DataGrip, detectando e instalando SqlPackage automáticamente.
+- **Categoría:** Plugin de JetBrains / DataGrip
+- **Creador:** Carlos Gomez
 
 ---
 
