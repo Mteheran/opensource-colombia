@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 46 projects · 7 categories
+> 📊 **Totals:** 47 projects · 7 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -252,6 +252,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Drupal field type that generates auto-incrementing serial numbers, either global or resettable by time period, useful for invoices and identifiers.
 - **Category:** Drupal module
 - **Creator:** Fernando Muñoz
+
+### 🔹 [SQL Server Bacpac Manager](https://github.com/carandev/sql-server-bacpac-manager)
+- **Description:** JetBrains plugin that exports and imports SQL Server `.bacpac` files directly from DataGrip's context menu, automatically detecting and installing SqlPackage.
+- **Category:** JetBrains plugin / DataGrip
+- **Creator:** Carlos Gomez
 
 ---
 

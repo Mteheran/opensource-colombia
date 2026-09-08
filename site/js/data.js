@@ -45,6 +45,7 @@ window.CATEGORIES = {
       profile: "https://git.drupalcode.org/waspper",
       area: "Drupal, PHP",
     },
+    carlosGomez: { name: "Carlos Gomez", github: "carandev", area: "JetBrains, DataGrip" },
   };
 
   window.PROJECTS = [
@@ -530,6 +531,18 @@ window.CATEGORIES = {
         es: "Tipo de campo para Drupal que genera números seriales autoincrementales, globales o reiniciables por periodo, útiles para facturas e identificadores.",
         en: "Drupal field type that generates auto-incrementing serial numbers, either global or resettable by time period, useful for invoices and identifiers.",
         pt: "Tipo de campo para Drupal que gera números seriais autoincrementais, globais ou reiniciáveis por período, úteis para faturas e identificadores.",
+      },
+    },
+    {
+      name: "SQL Server Bacpac Manager",
+      url: "https://github.com/carandev/sql-server-bacpac-manager",
+      category: "extensions",
+      creator: C.carlosGomez,
+      tags: ["JetBrains", "DataGrip", "Kotlin", "SQL Server"],
+      description: {
+        es: "Plugin de JetBrains que permite exportar e importar archivos .bacpac de SQL Server directamente desde el menú contextual de DataGrip, detectando e instalando SqlPackage automáticamente.",
+        en: "JetBrains plugin that exports and imports SQL Server .bacpac files directly from DataGrip's context menu, automatically detecting and installing SqlPackage.",
+        pt: "Plugin da JetBrains que exporta e importa arquivos .bacpac do SQL Server diretamente do menu de contexto do DataGrip, detectando e instalando o SqlPackage automaticamente.",
       },
     },
     {
