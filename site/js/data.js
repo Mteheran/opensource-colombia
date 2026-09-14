@@ -45,6 +45,7 @@ window.CATEGORIES = {
       profile: "https://git.drupalcode.org/waspper",
       area: "Drupal, PHP",
     },
+    jesus: { name: "Jesús Chapman", github: "JesusChapman", area: "Git, DevOps, Web" },
   };
 
   window.PROJECTS = [
@@ -542,6 +543,18 @@ window.CATEGORIES = {
         es: "Plataforma comercial de despliegue en la nube del equipo de FastAPI. No es open source, pero es el principal patrocinador de FastAPI y de los demás proyectos open source del equipo.",
         en: "Commercial cloud deployment platform from the FastAPI team. It is not open source, but it is the main sponsor of FastAPI and the team's other open source projects.",
         pt: "Plataforma comercial de deploy na nuvem da equipe do FastAPI. Não é open source, mas é o principal patrocinador do FastAPI e dos demais projetos open source da equipe.",
+      },
+    },
+    {
+      name: "OpenLat",
+      url: "https://openlat.dev",
+      category: "services",
+      creator: C.jesus,
+      tags: ["Git", "Forgejo", "PaaS", "DevOps"],
+      description: {
+        es: "Plataforma comunitaria de alojamiento de código Git libre, segura y de alto rendimiento para Latinoamérica, con servicio integrado de publicación estática OpenLat Pages.",
+        en: "Free, secure, and high-performance community Git hosting platform for Latin America, featuring integrated static site publishing via OpenLat Pages.",
+        pt: "Plataforma comunitária de hospedagem de código Git livre, segura e de alto desempenho para a América Latina, com serviço integrado de publicação estática OpenLat Pages.",
       },
     },
     {
