@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 46 proyectos · 7 categorías
+> 📊 **Totales:** 47 proyectos · 7 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -261,6 +261,11 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Plataforma comercial de despliegue en la nube creada por el equipo de FastAPI para llevar aplicaciones Python a producción con un solo comando. **No es un proyecto de código abierto**, pero es el principal patrocinador de FastAPI y de los demás proyectos open source del equipo, financiando su desarrollo y mantenimiento.
 - **Categoría:** Cloud / Plataforma de despliegue (PaaS) — Comercial
 - **Creador:** Sebastián Ramírez y el equipo de FastAPI
+
+### 🔹 [OpenLat](https://openlat.dev)
+- **Descripción:** Plataforma comunitaria de alojamiento de código Git libre, segura y de alto rendimiento para Latinoamérica, con servicio integrado de publicación estática OpenLat Pages.
+- **Categoría:** Alojamiento Git y Servicios Cloud
+- **Creador:** Jesús Chapman
 
 ---
 

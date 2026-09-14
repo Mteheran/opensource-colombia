@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 46 projects · 7 categories
+> 📊 **Totals:** 47 projects · 7 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -261,6 +261,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Commercial cloud deployment platform created by the FastAPI team to take Python applications to production with a single command. **It is not an open source project**, but it is the main sponsor of FastAPI and the team's other open source projects, funding their development and maintenance.
 - **Category:** Cloud / Deployment platform (PaaS) — Commercial
 - **Creator:** Sebastián Ramírez and the FastAPI team
+
+### 🔹 [OpenLat](https://openlat.dev)
+- **Description:** Free, secure, and high-performance community Git hosting platform for Latin America, featuring integrated static site publishing via OpenLat Pages.
+- **Category:** Git Hosting & Cloud Services
+- **Creator:** Jesús Chapman
 
 ---
 
