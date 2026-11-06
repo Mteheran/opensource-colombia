@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 46 projects · 7 categories
+> 📊 **Totals:** 47 projects · 7 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -76,6 +76,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Credit and debit card component for payment forms and saved-card views, with live brand detection, a 3D flip and CSS-variable theming. Dependency-free, for React, Vue, Svelte and vanilla JavaScript in a single package.
 - **Category:** UI components / payment forms
 - **Creator:** Juan David García Rincón
+
+### 🔹 [colombia-open](https://github.com/davidcasr/colombia-open)
+- **Description:** Colombia's public datasets (DANE, Ministry of Education, ICFES, IDEAM, National Police, Superfinanciera) curated, normalized and validated, ready to use from Python via `pip install colombia-open`.
+- **Category:** Public datasets / data library
+- **Creator:** David Castro
 
 ---
 
