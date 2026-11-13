@@ -111,6 +111,16 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** Herramientas para agentes IA
 - **Creador:** Juan Peláez (23blocks)
 
+### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
+- **Descripción:** Toolkit CLI y de agentes que prepara cualquier base de código para el desarrollo asistido por IA, construyendo una capa de conocimiento estructurada junto al código (Knowledge Driven Development).
+- **Categoría:** Herramientas para IA / CLI
+- **Creador:** Julian Dario Luna Patiño
+
+### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
+- **Descripción:** Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.
+- **Categoría:** IA / Skills para agentes
+- **Creador:** Manuel Gil
+
 ---
 
 ## 🛰️ APIs y Datos Abiertos
@@ -217,11 +227,6 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** Aplicación de escritorio / Documentación Markdown
 - **Creador:** Manuel Gil
 
-### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
-- **Descripción:** Toolkit CLI y de agentes que prepara cualquier base de código para el desarrollo asistido por IA, construyendo una capa de conocimiento estructurada junto al código (Knowledge Driven Development).
-- **Categoría:** Herramientas para IA / CLI
-- **Creador:** Julian Dario Luna Patiño
-
 ### 🔹 [Popochiu](https://github.com/carenalgas/popochiu)
 - **Descripción:** Plugin de Godot para crear juegos de aventura gráfica point-and-click, inspirado en Adventure Game Studio y PowerQuest, con gestión de habitaciones, personajes, diálogos e inventario.
 - **Categoría:** Plugin de Godot / Aventuras gráficas
@@ -314,11 +319,6 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Colección de skills listos para usar con Claude, ChatGPT y otros LLMs, orientados a la práctica jurídica colombiana: análisis de contratos, redacción de tutelas y escritos judiciales, investigación normativa y comunicación con clientes.
 - **Categoría:** IA / Legal tech
 - **Creador:** Carlos Alvarado
-
-### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
-- **Descripción:** Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.
-- **Categoría:** IA / Skills para agentes
-- **Creador:** Manuel Gil
 
 ---
 

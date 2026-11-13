@@ -89,13 +89,16 @@ Ambos READMEs muestran en la cabecera, además del selector de idioma:
 
 ### Secciones actuales
 
-| Emoji | Sección                              | `category` en `data.js` |
-| ----- | ------------------------------------ | ----------------------- |
-| 📚    | Bibliotecas y Frameworks             | `libraries`             |
-| 🛰️    | APIs y Datos Abiertos                | `apis`                  |
-| 📱    | Desarrollo Móvil, Juegos y Herramientas | `mobile`             |
-| 🧩    | Extensiones y Utilidades             | `extensions`            |
-| ☁️    | Servicios y Proveedores              | `services`              |
+| Emoji | Sección                                 | `category` en `data.js` |
+| ----- | --------------------------------------- | ----------------------- |
+| 📚    | Bibliotecas y Frameworks                | `libraries`             |
+| 🤖    | Agentes IA y Protocolos                 | `agents`                |
+| 🛰️    | APIs y Datos Abiertos                   | `apis`                  |
+| 📱    | Desarrollo Móvil, Juegos y Herramientas | `mobile`                |
+| 🎮    | Videojuegos                             | `games`                 |
+| 🧩    | Extensiones y Utilidades                | `extensions`            |
+| ☁️    | Servicios y Proveedores                 | `services`              |
+| 📦    | Recursos                                | `recursos`              |
 
 > La sección **Servicios y Proveedores** puede incluir proyectos **comerciales**
 > (no open source) cuando son relevantes para el ecosistema —por ejemplo, como
@@ -114,7 +117,7 @@ Expone un arreglo global `window.PROJECTS`. Cada proyecto es un objeto:
 {
   name: "Nombre del proyecto",
   url: "https://url-del-proyecto",
-  category: "libraries", // libraries | apis | mobile | extensions | services
+  category: "libraries", // libraries | agents | apis | mobile | games | extensions | services | recursos
   creator: "Nombre del creador",
   description: {
     es: "Descripción en español.",
@@ -124,7 +127,7 @@ Expone un arreglo global `window.PROJECTS`. Cada proyecto es un objeto:
 }
 ```
 
-- `category` **debe** ser una de las cinco claves válidas.
+- `category` **debe** ser una de las ocho claves válidas.
 - `description` **debe** incluir las tres claves de idioma: `es`, `en`, `pt`.
 
 ### 4.2 Textos de la interfaz — `site/js/i18n.js`
@@ -134,9 +137,16 @@ el texto de la UI (títulos, etiquetas, placeholders, nombres de categorías,
 mensajes) y funciones como `resultsCount(n)`. Los nombres de categoría del
 `<select>` y de los badges salen de `I18N[lang].categories`.
 
-Si se agrega una **nueva categoría**, hay que actualizar:
-1. `CATEGORY_ORDER` en `app.js`.
-2. La clave dentro de `categories` en **cada** idioma de `i18n.js`.
+Si se agrega una **nueva categoría**, hay que actualizarla en **ocho** sitios:
+1. `window.CATEGORIES` en `data.js` (color claro, color oscuro y glifo).
+2. `CATEGORY_ORDER` en `app.js`.
+3. Las claves dentro de `categories` y `categoriesShort` en **cada** idioma de
+   `i18n.js`.
+4. El token `--cat-<clave>` en `styles.css`, en el tema claro **y** en el oscuro.
+5. El chip de filtro en `index.html`.
+6. La sección nueva en `README.md` y en `README.en.md` (más los totales).
+7. La fila de la tabla de categorías válidas en `CONTRIBUTING.md`.
+8. La tabla de «Secciones actuales» de este archivo (sección 3).
 
 ### 4.3 Lógica — `site/js/app.js`
 

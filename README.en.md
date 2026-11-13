@@ -111,6 +111,16 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** Tooling for AI agents
 - **Creator:** Juan Peláez (23blocks)
 
+### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
+- **Description:** CLI and agent toolkit that prepares any codebase for AI-assisted development by building a structured knowledge layer alongside the code (Knowledge Driven Development).
+- **Category:** AI tools / CLI
+- **Creator:** Julian Dario Luna Patiño
+
+### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
+- **Description:** Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.
+- **Category:** AI / Agent skills
+- **Creator:** Manuel Gil
+
 ---
 
 ## 🛰️ APIs & Open Data
@@ -217,11 +227,6 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** Desktop application / Markdown documentation
 - **Creator:** Manuel Gil
 
-### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
-- **Description:** CLI and agent toolkit that prepares any codebase for AI-assisted development by building a structured knowledge layer alongside the code (Knowledge Driven Development).
-- **Category:** AI tools / CLI
-- **Creator:** Julian Dario Luna Patiño
-
 ### 🔹 [Popochiu](https://github.com/carenalgas/popochiu)
 - **Description:** Godot plugin for making point-and-click adventure games, inspired by Adventure Game Studio and PowerQuest, with room, character, dialogue and inventory management.
 - **Category:** Godot plugin / Adventure games
@@ -314,11 +319,6 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Collection of ready-to-use skills for Claude, ChatGPT and other LLMs, tailored to Colombian legal practice: contract analysis, drafting of tutelas and judicial documents, legal research and client communication.
 - **Category:** AI / Legal tech
 - **Creator:** Carlos Alvarado
-
-### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
-- **Description:** Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.
-- **Category:** AI / Agent skills
-- **Creator:** Manuel Gil
 
 ---
 

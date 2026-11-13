@@ -367,18 +367,6 @@ window.CATEGORIES = {
       },
     },
     {
-      name: "Kaddo",
-      url: "https://github.com/Kaddo-kdd/kaddo",
-      category: "extensions",
-      creator: C.julian,
-      tags: ["CLI", "AI", "MCP"],
-      description: {
-        es: "Toolkit CLI y de agentes que prepara cualquier base de código para el desarrollo asistido por IA, construyendo una capa de conocimiento estructurada junto al código (Knowledge Driven Development).",
-        en: "CLI and agent toolkit that prepares any codebase for AI-assisted development by building a structured knowledge layer alongside the code (Knowledge Driven Development).",
-        pt: "Toolkit de CLI e agentes que prepara qualquer base de código para o desenvolvimento assistido por IA, construindo uma camada de conhecimento estruturada junto ao código (Knowledge Driven Development).",
-      },
-    },
-    {
       name: "Popochiu",
       url: "https://github.com/carenalgas/popochiu",
       category: "extensions",
@@ -595,18 +583,6 @@ window.CATEGORIES = {
       },
     },
     {
-      name: "Weave Skills",
-      url: "https://github.com/ManuelGil/weave-context-skills",
-      category: "recursos",
-      creator: C.manuel,
-      tags: ["IA", "Agentes", "Markdown"],
-      description: {
-        es: "Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.",
-        en: "Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.",
-        pt: "Coleção de quatro skills em Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory e locality-recovery) que ajudam a preservar e reconstruir o contexto de trabalhos de engenharia que abrangem várias sessões. Instalam-se como arquivos do repositório e são compartilhados entre ferramentas como Claude, Cursor e Windsurf por meio de links simbólicos.",
-      },
-    },
-    {
       name: "AI Maestro",
       url: "https://github.com/23blocks-OS/ai-maestro",
       category: "agents",
@@ -676,6 +652,30 @@ window.CATEGORIES = {
         es: "Constructor de plugins para AI Maestro: ensambla personalidades, skills, mensajería e identidad desde un manifiesto.",
         en: "Plugin builder for AI Maestro: assembles personalities, skills, messaging and identity from a manifest.",
         pt: "Construtor de plugins para o AI Maestro: monta personalidades, skills, mensageria e identidade a partir de um manifesto.",
+      },
+    },
+    {
+      name: "Kaddo",
+      url: "https://github.com/Kaddo-kdd/kaddo",
+      category: "agents",
+      creator: C.julian,
+      tags: ["CLI", "AI", "MCP"],
+      description: {
+        es: "Toolkit CLI y de agentes que prepara cualquier base de código para el desarrollo asistido por IA, construyendo una capa de conocimiento estructurada junto al código (Knowledge Driven Development).",
+        en: "CLI and agent toolkit that prepares any codebase for AI-assisted development by building a structured knowledge layer alongside the code (Knowledge Driven Development).",
+        pt: "Toolkit de CLI e agentes que prepara qualquer base de código para o desenvolvimento assistido por IA, construindo uma camada de conhecimento estruturada junto ao código (Knowledge Driven Development).",
+      },
+    },
+    {
+      name: "Weave Skills",
+      url: "https://github.com/ManuelGil/weave-context-skills",
+      category: "agents",
+      creator: C.manuel,
+      tags: ["IA", "Agentes", "Markdown"],
+      description: {
+        es: "Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.",
+        en: "Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.",
+        pt: "Coleção de quatro skills em Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory e locality-recovery) que ajudam a preservar e reconstruir o contexto de trabalhos de engenharia que abrangem várias sessões. Instalam-se como arquivos do repositório e são compartilhados entre ferramentas como Claude, Cursor e Windsurf por meio de links simbólicos.",
       },
     },
   ];
