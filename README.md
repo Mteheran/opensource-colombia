@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 47 proyectos · 7 categorías
+> 📊 **Totales:** 54 proyectos · 8 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -81,6 +81,50 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Datasets públicos de Colombia (DANE, MinEducación, ICFES, IDEAM, Policía, Superfinanciera) curados, normalizados y validados, listos para usar desde Python con `pip install colombia-open`.
 - **Categoría:** Datasets públicos / librería de datos
 - **Creador:** David Castro
+
+---
+
+## 🤖 Agentes IA y Protocolos
+
+### 🔹 [AI Maestro](https://github.com/23blocks-OS/ai-maestro)
+- **Descripción:** Orquestador de agentes de IA con panel web: memoria semántica, consultas al grafo de código y mensajería entre agentes. Gestiona Claude, Codex o cualquier agente desde un solo lugar, incluso repartidos entre varios computadores.
+- **Categoría:** Orquestación de agentes IA
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Messaging Protocol](https://github.com/agentmessaging/protocol)
+- **Descripción:** Estándar abierto de mensajería entre agentes de IA, con sobres firmados con Ed25519, federación entre proveedores y entrega que debe comprobarse en lugar de asumirse.
+- **Categoría:** Protocolo / Mensajería entre agentes
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [lolabot](https://github.com/23blocks-OS/lolabot)
+- **Descripción:** Asistente tipo jefe de gabinete para Claude Code: correo, memoria semántica entre sesiones, gestión de tareas y seguridad de contenido. Funciona solo o sobre AI Maestro.
+- **Categoría:** Asistente personal / Agentes IA
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Identity](https://github.com/agentmessaging/agent-identity)
+- **Descripción:** Identidad, autenticación y autorización para agentes de IA usando claves Ed25519 e intercambio de tokens OAuth 2.0.
+- **Categoría:** Protocolo / Identidad y autenticación
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Actions Protocol](https://github.com/agentmessaging/agent-actions)
+- **Descripción:** Protocolo abierto para interacciones estructuradas entre interfaces de usuario y agentes de IA.
+- **Categoría:** Protocolo / Interacción UI-agente
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
+- **Descripción:** Constructor de plugins para AI Maestro: ensambla personalidades, skills, mensajería e identidad en un plugin completo a partir de un manifiesto.
+- **Categoría:** Herramientas para agentes IA
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
+- **Descripción:** Toolkit CLI y de agentes que prepara cualquier base de código para el desarrollo asistido por IA, construyendo una capa de conocimiento estructurada junto al código (Knowledge Driven Development).
+- **Categoría:** Herramientas para IA / CLI
+- **Creador:** Julian Dario Luna Patiño
+
+### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
+- **Descripción:** Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.
+- **Categoría:** IA / Skills para agentes
+- **Creador:** Manuel Gil
 
 ---
 
@@ -188,11 +232,6 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** Aplicación de escritorio / Documentación Markdown
 - **Creador:** Manuel Gil
 
-### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
-- **Descripción:** Toolkit CLI y de agentes que prepara cualquier base de código para el desarrollo asistido por IA, construyendo una capa de conocimiento estructurada junto al código (Knowledge Driven Development).
-- **Categoría:** Herramientas para IA / CLI
-- **Creador:** Julian Dario Luna Patiño
-
 ### 🔹 [Popochiu](https://github.com/carenalgas/popochiu)
 - **Descripción:** Plugin de Godot para crear juegos de aventura gráfica point-and-click, inspirado en Adventure Game Studio y PowerQuest, con gestión de habitaciones, personajes, diálogos e inventario.
 - **Categoría:** Plugin de Godot / Aventuras gráficas
@@ -258,6 +297,11 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** Módulo de Drupal
 - **Creador:** Fernando Muñoz
 
+### 🔹 [SQL Server Bacpac Manager](https://github.com/carandev/sql-server-bacpac-manager)
+- **Descripción:** Plugin de JetBrains que permite exportar e importar archivos .bacpac de SQL Server directamente desde el menú contextual de DataGrip, detectando e instalando SqlPackage automáticamente.
+- **Categoría:** Plugin de JetBrains / DataGrip
+- **Creador:** Carlos Gomez
+
 ---
 
 ## ☁️ Servicios y Proveedores
@@ -285,11 +329,6 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Colección de skills listos para usar con Claude, ChatGPT y otros LLMs, orientados a la práctica jurídica colombiana: análisis de contratos, redacción de tutelas y escritos judiciales, investigación normativa y comunicación con clientes.
 - **Categoría:** IA / Legal tech
 - **Creador:** Carlos Alvarado
-
-### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
-- **Descripción:** Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.
-- **Categoría:** IA / Skills para agentes
-- **Creador:** Manuel Gil
 
 ---
 

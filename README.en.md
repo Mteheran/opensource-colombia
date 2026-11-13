@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 47 projects · 7 categories
+> 📊 **Totals:** 54 projects · 8 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -81,6 +81,50 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Colombia's public datasets (DANE, Ministry of Education, ICFES, IDEAM, National Police, Superfinanciera) curated, normalized and validated, ready to use from Python via `pip install colombia-open`.
 - **Category:** Public datasets / data library
 - **Creator:** David Castro
+
+---
+
+## 🤖 AI Agents & Protocols
+
+### 🔹 [AI Maestro](https://github.com/23blocks-OS/ai-maestro)
+- **Description:** AI agent orchestrator with a web dashboard: semantic memory, code-graph queries and agent-to-agent messaging. Run Claude, Codex or any agent from one place, even spread across several machines.
+- **Category:** AI agent orchestration
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Messaging Protocol](https://github.com/agentmessaging/protocol)
+- **Description:** Open standard for agent-to-agent messaging, with Ed25519-signed envelopes, federation across providers and delivery that must be proven rather than assumed.
+- **Category:** Protocol / Agent messaging
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [lolabot](https://github.com/23blocks-OS/lolabot)
+- **Description:** Chief-of-staff assistant for Claude Code: email, semantic memory across sessions, task management and content security. Runs standalone or on AI Maestro.
+- **Category:** Personal assistant / AI agents
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Identity](https://github.com/agentmessaging/agent-identity)
+- **Description:** Identity, authentication and authorization for AI agents using Ed25519 keys and OAuth 2.0 token exchange.
+- **Category:** Protocol / Identity and authentication
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Actions Protocol](https://github.com/agentmessaging/agent-actions)
+- **Description:** Open protocol for structured interactions between user interfaces and AI agents.
+- **Category:** Protocol / UI-to-agent interaction
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
+- **Description:** Plugin builder for AI Maestro: assembles personalities, skills, messaging and identity into a complete plugin from a manifest.
+- **Category:** Tooling for AI agents
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
+- **Description:** CLI and agent toolkit that prepares any codebase for AI-assisted development by building a structured knowledge layer alongside the code (Knowledge Driven Development).
+- **Category:** AI tools / CLI
+- **Creator:** Julian Dario Luna Patiño
+
+### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
+- **Description:** Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.
+- **Category:** AI / Agent skills
+- **Creator:** Manuel Gil
 
 ---
 
@@ -188,11 +232,6 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** Desktop application / Markdown documentation
 - **Creator:** Manuel Gil
 
-### 🔹 [Kaddo](https://github.com/Kaddo-kdd/kaddo)
-- **Description:** CLI and agent toolkit that prepares any codebase for AI-assisted development by building a structured knowledge layer alongside the code (Knowledge Driven Development).
-- **Category:** AI tools / CLI
-- **Creator:** Julian Dario Luna Patiño
-
 ### 🔹 [Popochiu](https://github.com/carenalgas/popochiu)
 - **Description:** Godot plugin for making point-and-click adventure games, inspired by Adventure Game Studio and PowerQuest, with room, character, dialogue and inventory management.
 - **Category:** Godot plugin / Adventure games
@@ -258,6 +297,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** Drupal module
 - **Creator:** Fernando Muñoz
 
+### 🔹 [SQL Server Bacpac Manager](https://github.com/carandev/sql-server-bacpac-manager)
+- **Description:** JetBrains plugin that exports and imports SQL Server .bacpac files directly from DataGrip's context menu, automatically detecting and installing SqlPackage.
+- **Category:** JetBrains plugin / DataGrip
+- **Creator:** Carlos Gomez
+
 ---
 
 ## ☁️ Services & Providers
@@ -285,11 +329,6 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Collection of ready-to-use skills for Claude, ChatGPT and other LLMs, tailored to Colombian legal practice: contract analysis, drafting of tutelas and judicial documents, legal research and client communication.
 - **Category:** AI / Legal tech
 - **Creator:** Carlos Alvarado
-
-### 🔹 [Weave Skills](https://github.com/ManuelGil/weave-context-skills)
-- **Description:** Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.
-- **Category:** AI / Agent skills
-- **Creator:** Manuel Gil
 
 ---
 
