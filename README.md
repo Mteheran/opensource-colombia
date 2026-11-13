@@ -77,7 +77,7 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** Componentes de UI / formularios de pago
 - **Creador:** Juan David García Rincón
 
-### 🔹 [colombia-open](https://github.com/davidcasr/colombia-open)
+### 🔹 [colombia-open](https://colombia-open.github.io/)
 - **Descripción:** Datasets públicos de Colombia (DANE, MinEducación, ICFES, IDEAM, Policía, Superfinanciera) curados, normalizados y validados, listos para usar desde Python con `pip install colombia-open`.
 - **Categoría:** Datasets públicos / librería de datos
 - **Creador:** David Castro

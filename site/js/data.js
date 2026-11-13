@@ -694,7 +694,7 @@ window.CATEGORIES = {
     },
     {
       name: "colombia-open",
-      url: "https://github.com/davidcasr/colombia-open",
+      url: "https://colombia-open.github.io/",
       category: "libraries",
       creator: C.davidcasr,
       tags: ["Python", "Polars", "Datos abiertos"],

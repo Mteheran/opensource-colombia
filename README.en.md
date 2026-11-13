@@ -77,7 +77,7 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** UI components / payment forms
 - **Creator:** Juan David García Rincón
 
-### 🔹 [colombia-open](https://github.com/davidcasr/colombia-open)
+### 🔹 [colombia-open](https://colombia-open.github.io/)
 - **Description:** Colombia's public datasets (DANE, Ministry of Education, ICFES, IDEAM, National Police, Superfinanciera) curated, normalized and validated, ready to use from Python via `pip install colombia-open`.
 - **Category:** Public datasets / data library
 - **Creator:** David Castro
