@@ -48,6 +48,7 @@ window.CATEGORIES = {
       area: "Drupal, PHP",
     },
     carlosgomez: { name: "Carlos Gomez", github: "carandev", area: "DataGrip, Kotlin" },
+    davidcasr: { name: "David Castro", github: "davidcasr", area: "Python, datos abiertos" },
   };
 
   window.PROJECTS = [
@@ -689,6 +690,18 @@ window.CATEGORIES = {
         es: "Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.",
         en: "Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.",
         pt: "Coleção de quatro skills em Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory e locality-recovery) que ajudam a preservar e reconstruir o contexto de trabalhos de engenharia que abrangem várias sessões. Instalam-se como arquivos do repositório e são compartilhados entre ferramentas como Claude, Cursor e Windsurf por meio de links simbólicos.",
+      },
+    },
+    {
+      name: "colombia-open",
+      url: "https://colombia-open.github.io/",
+      category: "libraries",
+      creator: C.davidcasr,
+      tags: ["Python", "Polars", "Datos abiertos"],
+      description: {
+        es: "Datasets públicos de Colombia (DANE, MinEducación, ICFES, IDEAM, Policía, Superfinanciera) curados, normalizados y validados, listos para usar desde Python con pip install colombia-open.",
+        en: "Colombia's public datasets (DANE, Ministry of Education, ICFES, IDEAM, National Police, Superfinanciera) curated, normalized and validated, ready to use from Python via pip install colombia-open.",
+        pt: "Conjuntos de dados públicos da Colômbia (DANE, Ministério da Educação, ICFES, IDEAM, Polícia, Superfinanciera) curados, normalizados e validados, prontos para usar em Python via pip install colombia-open.",
       },
     },
   ];
