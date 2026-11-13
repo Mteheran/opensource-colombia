@@ -7,6 +7,7 @@
   const SUPPORTED_LANGS = ["es", "en", "pt"];
   const CATEGORY_ORDER = [
     "libraries",
+    "agents",
     "apis",
     "mobile",
     "games",

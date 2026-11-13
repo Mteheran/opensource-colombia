@@ -59,7 +59,7 @@ Añade el objeto del proyecto con una `category` válida y la descripción en lo
 {
   name: "Nombre del proyecto",
   url: "https://url-del-proyecto",
-  category: "libraries", // libraries | apis | mobile | extensions | services
+  category: "libraries", // libraries | agents | apis | mobile | games | extensions | services | recursos
   creator: "Nombre del creador",
   description: {
     es: "Descripción en español.",
@@ -80,11 +80,13 @@ solos.)
 | Emoji | Sección                                 | `category` en `data.js` |
 | ----- | --------------------------------------- | ----------------------- |
 | 📚    | Bibliotecas y Frameworks                | `libraries`             |
+| 🤖    | Agentes IA y Protocolos                 | `agents`                |
 | 🛰️    | APIs y Datos Abiertos                   | `apis`                  |
 | 📱    | Desarrollo Móvil, Juegos y Herramientas | `mobile`                |
 | 🎮    | Videojuegos                             | `games`                 |
 | 🧩    | Extensiones y Utilidades                | `extensions`            |
 | ☁️    | Servicios y Proveedores                 | `services`              |
+| 📦    | Recursos                                | `recursos`              |
 
 > 💡 Verifica los datos (URL, creador, descripción) contra la fuente oficial
 > (repositorio o sitio) antes de escribirlos.
