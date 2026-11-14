@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 53 proyectos · 8 categorías
+> 📊 **Totales:** 55 proyectos · 8 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -104,6 +104,16 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 ### 🔹 [Agent Actions Protocol](https://github.com/agentmessaging/agent-actions)
 - **Descripción:** Protocolo abierto para interacciones estructuradas entre interfaces de usuario y agentes de IA.
 - **Categoría:** Protocolo / Interacción UI-agente
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Files Protocol](https://github.com/agentmessaging/agent-files)
+- **Descripción:** Protocolo abierto para que agentes y personas compartan archivos entre computadores sobre cualquier almacenamiento compatible con S3. Los archivos se comparten por referencia y se verifican con su hash, sin carpetas montadas.
+- **Categoría:** Protocolo / Archivos entre agentes
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Device Protocol](https://github.com/agentmessaging/agent-device-protocol)
+- **Descripción:** Protocolo abierto para que los agentes de IA tengan y usen dispositivos reales (una cámara, una pantalla, un parlante). Cada orden va firmada con Ed25519, la persona aprueba en el propio dispositivo y no hay nube en el medio.
+- **Categoría:** Protocolo / Dispositivos para agentes
 - **Creador:** Juan Peláez (23blocks)
 
 ### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)

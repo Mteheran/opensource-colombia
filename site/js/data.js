@@ -656,6 +656,30 @@ window.CATEGORIES = {
       },
     },
     {
+      name: "Agent Files Protocol",
+      url: "https://github.com/agentmessaging/agent-files",
+      category: "agents",
+      creator: C.juan,
+      tags: ["Protocol", "S3", "Files"],
+      description: {
+        es: "Protocolo abierto para que agentes y personas compartan archivos entre computadores sobre almacenamiento compatible con S3, por referencia y verificados con su hash.",
+        en: "Open protocol for agents and people to share files across hosts on S3-compatible storage, by reference and verified by their hash.",
+        pt: "Protocolo aberto para que agentes e pessoas compartilhem arquivos entre computadores sobre armazenamento compatível com S3, por referência e verificados pelo hash.",
+      },
+    },
+    {
+      name: "Agent Device Protocol",
+      url: "https://github.com/agentmessaging/agent-device-protocol",
+      category: "agents",
+      creator: C.juan,
+      tags: ["Protocol", "Ed25519", "Devices"],
+      description: {
+        es: "Protocolo abierto para que los agentes de IA usen dispositivos reales: órdenes firmadas con Ed25519, aprobadas en el propio dispositivo y sin nube en el medio.",
+        en: "Open protocol for AI agents to use real devices: Ed25519-signed requests, approved on the device itself, with no cloud in the middle.",
+        pt: "Protocolo aberto para que agentes de IA usem dispositivos reais: pedidos assinados com Ed25519, aprovados no próprio dispositivo e sem nuvem no meio.",
+      },
+    },
+    {
       name: "AI Maestro Plugins",
       url: "https://github.com/23blocks-OS/ai-maestro-plugins",
       category: "agents",
