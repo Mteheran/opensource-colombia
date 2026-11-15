@@ -37,6 +37,7 @@ window.CATEGORIES = {
     juanda: { name: "Juan David García Rincón", github: "JuandaGarcia", area: "UI, componentes web" },
     nestor: { name: "Néstor Andrés Peña", github: "nestorandrespe", area: "Archivos, Datos" },
     carlos: { name: "Carlos Alvarado", github: "cadavidalvarado", area: "IA, Legal tech" },
+    jdjuan: { name: "Juan Herrera", github: "jdjuan", area: "IA, extensiones" },
     miguelcort: { name: "Miguel Cortes", github: "miguelcort", area: "IA, seguridad" },
     yared: { name: "Yared Henriquez", github: "DevCop95", area: "Ciberseguridad, bug bounty" },
     gustavo: { name: "Gustavo Adolfo Rodríguez", github: "ingegus", area: "Moodle, PHP" },
@@ -690,6 +691,30 @@ window.CATEGORIES = {
         es: "Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.",
         en: "Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.",
         pt: "Coleção de quatro skills em Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory e locality-recovery) que ajudam a preservar e reconstruir o contexto de trabalhos de engenharia que abrangem várias sessões. Instalam-se como arquivos do repositório e são compartilhados entre ferramentas como Claude, Cursor e Windsurf por meio de links simbólicos.",
+      },
+    },
+    {
+      name: "MySkills",
+      url: "https://github.com/jdjuan/myskills",
+      category: "agents",
+      creator: C.jdjuan,
+      tags: ["Python", "IA", "Agentes"],
+      description: {
+        es: "Panel local para las skills de agentes instaladas en Codex, Claude Code u otros agentes: explora sus instrucciones, organízalas por categorías, revisa su uso y envía las que no necesitas a la papelera. Sin cuentas, API keys ni hosting.",
+        en: "Local dashboard for the agent skills installed in Codex, Claude Code or other agents: browse their instructions, organize them into categories, review usage and move unwanted ones to the Trash. No accounts, API keys or hosting.",
+        pt: "Painel local para as skills de agentes instaladas no Codex, Claude Code ou outros agentes: explore suas instruções, organize-as por categorias, veja o uso e envie as que não precisa para a lixeira. Sem contas, chaves de API ou hospedagem.",
+      },
+    },
+    {
+      name: "SuperChrome",
+      url: "https://github.com/jdjuan/SuperChrome",
+      category: "extensions",
+      creator: C.jdjuan,
+      tags: ["Chrome", "JavaScript"],
+      description: {
+        es: "Extensión para Chrome y Brave que oculta los feeds de YouTube, Instagram, X y LinkedIn, descarga videos, muestra estadísticas de publicaciones de Instagram y agrega atajos como retroceder cinco segundos en YouTube y Netflix.",
+        en: "Chrome and Brave extension that hides YouTube, Instagram, X and LinkedIn feeds, downloads videos, shows Instagram post stats and adds shortcuts such as a five-second rewind on YouTube and Netflix.",
+        pt: "Extensão para Chrome e Brave que oculta os feeds do YouTube, Instagram, X e LinkedIn, baixa vídeos, mostra estatísticas de publicações do Instagram e adiciona atalhos como voltar cinco segundos no YouTube e na Netflix.",
       },
     },
     {

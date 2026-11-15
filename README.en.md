@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 54 projects · 8 categories
+> 📊 **Totals:** 56 projects · 8 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -125,6 +125,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.
 - **Category:** AI / Agent skills
 - **Creator:** Manuel Gil
+
+### 🔹 [MySkills](https://github.com/jdjuan/myskills)
+- **Description:** Local dashboard to browse, organize and clean up the agent skills installed in Codex, Claude Code or other agents, with no accounts or hosting.
+- **Category:** AI Agents / Skills
+- **Creator:** Juan Herrera
 
 ---
 
@@ -301,6 +306,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** JetBrains plugin that exports and imports SQL Server .bacpac files directly from DataGrip's context menu, automatically detecting and installing SqlPackage.
 - **Category:** JetBrains plugin / DataGrip
 - **Creator:** Carlos Gomez
+
+### 🔹 [SuperChrome](https://github.com/jdjuan/SuperChrome)
+- **Description:** Chrome and Brave extension that hides social media feeds, downloads videos and shows Instagram stats.
+- **Category:** Chrome Extensions / Productivity
+- **Creator:** Juan Herrera
 
 ---
 
