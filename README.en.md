@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 56 projects · 8 categories
+> 📊 **Totals:** 58 projects · 8 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
