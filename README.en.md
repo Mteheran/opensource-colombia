@@ -126,7 +126,7 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** AI / Agent skills
 - **Creator:** Manuel Gil
 
-### 🔹 [SEO Skills](https://seo-skills.com)
+### 🔹 [SEO Skills](https://github.com/jorgejaramillo/seoskills)
 - **Description:** Open-source, constantly evolving collection of skills for AI agents (Claude, Cursor, v0 and others) that automate technical SEO: audits, keywords, internal linking and reports.
 - **Category:** AI / Agent skills
 - **Creator:** Jorge Jaramillo

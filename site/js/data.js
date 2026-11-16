@@ -695,7 +695,7 @@ window.CATEGORIES = {
     },
     {
       name: "SEO Skills",
-      url: "https://seo-skills.com",
+      url: "https://github.com/jorgejaramillo/seoskills",
       category: "agents",
       creator: C.jorge,
       tags: ["SEO", "IA", "Agentes"],

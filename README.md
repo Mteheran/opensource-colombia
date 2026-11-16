@@ -126,7 +126,7 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** IA / Skills para agentes
 - **Creador:** Manuel Gil
 
-### 🔹 [SEO Skills](https://seo-skills.com)
+### 🔹 [SEO Skills](https://github.com/jorgejaramillo/seoskills)
 - **Descripción:** Colección open source, en constante evolución, de skills para agentes de IA (Claude, Cursor, v0 y otros) que automatizan el SEO técnico: auditorías, keywords, enlazado interno e informes.
 - **Categoría:** IA / Skills para agentes
 - **Creador:** Jorge Jaramillo
