@@ -111,6 +111,16 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** Protocol / UI-to-agent interaction
 - **Creator:** Juan Peláez (23blocks)
 
+### 🔹 [Agent Files Protocol](https://github.com/agentmessaging/agent-files)
+- **Description:** Open protocol for agents and people to share files across hosts on any S3-compatible store. Files are shared by reference and verified by their hash, with no mounted folders.
+- **Category:** Protocol / Files between agents
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Device Protocol](https://github.com/agentmessaging/agent-device-protocol)
+- **Description:** Open protocol for AI agents to own and use real devices (a camera, a screen, a speaker). Every request is signed with Ed25519, the person approves on the device itself, and there is no cloud in the middle.
+- **Category:** Protocol / Devices for agents
+- **Creator:** Juan Peláez (23blocks)
+
 ### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
 - **Description:** Plugin builder for AI Maestro: assembles personalities, skills, messaging and identity into a complete plugin from a manifest.
 - **Category:** Tooling for AI agents
