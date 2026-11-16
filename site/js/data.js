@@ -50,6 +50,7 @@ window.CATEGORIES = {
     },
     carlosgomez: { name: "Carlos Gomez", github: "carandev", area: "DataGrip, Kotlin" },
     davidcasr: { name: "David Castro", github: "davidcasr", area: "Python, datos abiertos" },
+    jorge: { name: "Jorge Jaramillo", github: "jorgejaramillo", area: "SEO, IA" },
   };
 
   window.PROJECTS = [
@@ -715,6 +716,18 @@ window.CATEGORIES = {
         es: "Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.",
         en: "Collection of four Markdown skills for AI agents (knowledge-construction, implementation-investigation, operational-memory and locality-recovery) that help preserve and rebuild context across engineering work spanning multiple sessions. They install as repository files and are shared across tools such as Claude, Cursor and Windsurf through symbolic links.",
         pt: "Coleção de quatro skills em Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory e locality-recovery) que ajudam a preservar e reconstruir o contexto de trabalhos de engenharia que abrangem várias sessões. Instalam-se como arquivos do repositório e são compartilhados entre ferramentas como Claude, Cursor e Windsurf por meio de links simbólicos.",
+      },
+    },
+    {
+      name: "SEO Skills",
+      url: "https://github.com/jorgejaramillo/seoskills",
+      category: "agents",
+      creator: C.jorge,
+      tags: ["SEO", "IA", "Agentes"],
+      description: {
+        es: "Colección open source, en constante evolución, de skills para agentes de IA (Claude, Cursor, v0 y otros) que automatizan el SEO técnico: auditorías, keywords, enlazado interno e informes.",
+        en: "Open-source, constantly evolving collection of skills for AI agents (Claude, Cursor, v0 and others) that automate technical SEO: audits, keywords, internal linking and reports.",
+        pt: "Coleção open source, em constante evolução, de skills para agentes de IA (Claude, Cursor, v0 e outros) que automatizam o SEO técnico: auditorias, keywords, links internos e relatórios.",
       },
     },
     {
