@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 55 proyectos · 8 categorías
+> 📊 **Totales:** 59 proyectos · 8 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -111,6 +111,16 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Categoría:** Protocolo / Interacción UI-agente
 - **Creador:** Juan Peláez (23blocks)
 
+### 🔹 [Agent Files Protocol](https://github.com/agentmessaging/agent-files)
+- **Descripción:** Protocolo abierto para que agentes y personas compartan archivos entre computadores sobre cualquier almacenamiento compatible con S3. Los archivos se comparten por referencia y se verifican con su hash, sin carpetas montadas.
+- **Categoría:** Protocolo / Archivos entre agentes
+- **Creador:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Device Protocol](https://github.com/agentmessaging/agent-device-protocol)
+- **Descripción:** Protocolo abierto para que los agentes de IA tengan y usen dispositivos reales (una cámara, una pantalla, un parlante). Cada orden va firmada con Ed25519, la persona aprueba en el propio dispositivo y no hay nube en el medio.
+- **Categoría:** Protocolo / Dispositivos para agentes
+- **Creador:** Juan Peláez (23blocks)
+
 ### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
 - **Descripción:** Constructor de plugins para AI Maestro: ensambla personalidades, skills, mensajería e identidad en un plugin completo a partir de un manifiesto.
 - **Categoría:** Herramientas para agentes IA
@@ -130,6 +140,11 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Colección open source, en constante evolución, de skills para agentes de IA (Claude, Cursor, v0 y otros) que automatizan el SEO técnico: auditorías, keywords, enlazado interno e informes.
 - **Categoría:** IA / Skills para agentes
 - **Creador:** Jorge Jaramillo
+
+### 🔹 [MySkills](https://github.com/jdjuan/myskills)
+- **Descripción:** Panel local para explorar, organizar y limpiar las skills de agentes instaladas en Codex, Claude Code u otros agentes, sin cuentas ni hosting.
+- **Categoría:** Agentes IA / Skills
+- **Creador:** Juan Herrera
 
 ---
 
@@ -306,6 +321,11 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Plugin de JetBrains que permite exportar e importar archivos .bacpac de SQL Server directamente desde el menú contextual de DataGrip, detectando e instalando SqlPackage automáticamente.
 - **Categoría:** Plugin de JetBrains / DataGrip
 - **Creador:** Carlos Gomez
+
+### 🔹 [SuperChrome](https://github.com/jdjuan/SuperChrome)
+- **Descripción:** Extensión para Chrome y Brave que oculta feeds de redes sociales, descarga videos y muestra estadísticas de Instagram.
+- **Categoría:** Extensiones Chrome / Productividad
+- **Creador:** Juan Herrera
 
 ---
 

@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totals:** 55 projects · 8 categories
+> 📊 **Totals:** 59 projects · 8 categories
 
 A showcase of Colombian talent in technology, programming and open data. All projects are:
 
@@ -111,6 +111,16 @@ There you can search projects, filter by category and discover Colombian open so
 - **Category:** Protocol / UI-to-agent interaction
 - **Creator:** Juan Peláez (23blocks)
 
+### 🔹 [Agent Files Protocol](https://github.com/agentmessaging/agent-files)
+- **Description:** Open protocol for agents and people to share files across hosts on any S3-compatible store. Files are shared by reference and verified by their hash, with no mounted folders.
+- **Category:** Protocol / Files between agents
+- **Creator:** Juan Peláez (23blocks)
+
+### 🔹 [Agent Device Protocol](https://github.com/agentmessaging/agent-device-protocol)
+- **Description:** Open protocol for AI agents to own and use real devices (a camera, a screen, a speaker). Every request is signed with Ed25519, the person approves on the device itself, and there is no cloud in the middle.
+- **Category:** Protocol / Devices for agents
+- **Creator:** Juan Peláez (23blocks)
+
 ### 🔹 [AI Maestro Plugins](https://github.com/23blocks-OS/ai-maestro-plugins)
 - **Description:** Plugin builder for AI Maestro: assembles personalities, skills, messaging and identity into a complete plugin from a manifest.
 - **Category:** Tooling for AI agents
@@ -130,6 +140,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** Open-source, constantly evolving collection of skills for AI agents (Claude, Cursor, v0 and others) that automate technical SEO: audits, keywords, internal linking and reports.
 - **Category:** AI / Agent skills
 - **Creator:** Jorge Jaramillo
+
+### 🔹 [MySkills](https://github.com/jdjuan/myskills)
+- **Description:** Local dashboard to browse, organize and clean up the agent skills installed in Codex, Claude Code or other agents, with no accounts or hosting.
+- **Category:** AI Agents / Skills
+- **Creator:** Juan Herrera
 
 ---
 
@@ -306,6 +321,11 @@ There you can search projects, filter by category and discover Colombian open so
 - **Description:** JetBrains plugin that exports and imports SQL Server .bacpac files directly from DataGrip's context menu, automatically detecting and installing SqlPackage.
 - **Category:** JetBrains plugin / DataGrip
 - **Creator:** Carlos Gomez
+
+### 🔹 [SuperChrome](https://github.com/jdjuan/SuperChrome)
+- **Description:** Chrome and Brave extension that hides social media feeds, downloads videos and shows Instagram stats.
+- **Category:** Chrome Extensions / Productivity
+- **Creator:** Juan Herrera
 
 ---
 
