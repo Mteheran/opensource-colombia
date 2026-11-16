@@ -9,7 +9,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/Mteheran/opensource-colombia?color=ee8449&style=flat-square)](#-contribuidores)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-> 📊 **Totales:** 54 proyectos · 8 categorías
+> 📊 **Totales:** 55 proyectos · 8 categorías
 
 Una muestra del talento colombiano en tecnología, programación y datos abiertos. Todos los proyectos son:
 
@@ -125,6 +125,11 @@ Allí puedes buscar proyectos, filtrar por categoría y descubrir el talento col
 - **Descripción:** Colección de cuatro skills en Markdown para agentes de IA (knowledge-construction, implementation-investigation, operational-memory y locality-recovery) que ayudan a preservar y reconstruir el contexto de trabajos de ingeniería que abarcan varias sesiones. Se instalan como archivos del repositorio y se comparten entre herramientas como Claude, Cursor y Windsurf mediante enlaces simbólicos.
 - **Categoría:** IA / Skills para agentes
 - **Creador:** Manuel Gil
+
+### 🔹 [SEO Skills](https://seo-skills.com)
+- **Descripción:** Colección open source, en constante evolución, de skills para agentes de IA (Claude, Cursor, v0 y otros) que automatizan el SEO técnico: auditorías, keywords, enlazado interno e informes.
+- **Categoría:** IA / Skills para agentes
+- **Creador:** Jorge Jaramillo
 
 ---
 
